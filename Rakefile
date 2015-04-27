@@ -18,7 +18,7 @@ midify_files.each do |fname|
   end
 end
 
-task :yml => yml_files
+task :yaml => yaml_files
 task :midi => midi_files
 
 task :clean do
