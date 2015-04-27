@@ -1,0 +1,164 @@
+score FOUR_FOUR,90 do
+  section "Part 1" do
+
+    # Measure 1
+    riff2 = "3/16C3 3/16G3 /4F#3 /8C3 /8G3 /8F#3".to_notes
+    measures(
+      "2" => riff2*2,
+    )
+
+    # Measure 3
+    measures(
+      "1" => "/8G3 /8 /8E3 /4D3 /8C3 /8B2 /8G2
+              /4A2 /8C3 /8D3= /16D3 /16D3 /16D3 /16D3 /8D3. /16E3 /16D3".to_notes,
+      "2" => riff2*2,
+    )
+
+    # Meaure 5
+    measures(
+      "1" => "/8G3 /8 /8E3 /4D3 /8C3 /8B2 /8A2".to_notes,
+      "2" => riff2 + "".to_notes,
+    )
+
+    # Measure 6
+    measures(
+      "1" => "/4G2 /4F#2 /8E2 /4F#2 /8E2
+              /4D2 /4E2 /8G2 3/8C3".to_notes,
+      "2" => "3/16B2 /16B2 /4A2 /8G2 3/8D3
+              3/16D3 /16D3 /4C3 /8B2 3/8E3".to_notes,
+    )
+  end
+
+  section "Part 2" do
+    meter_change FOUR_FOUR
+    tempo_change 90
+
+    # Measure 1
+    measures(
+      "1" => "/4Bb3 /4G3 /4C4 /4B3
+              /4Bb3 /4A3 3/8A3 /8C4
+              /4D4 /4Bb3 /8G3 /8F4 /4D4
+              /4C4 /8F4 /8D4 /2E4".to_notes,
+      "2" => "/4F3 /4C3 /4Ab3 /4G3".to_notes + 
+             e_notes([F3,G3,F3,E3,D3,Db3,D3,Gb3]) + 
+             "/8G3 /4G2 /8A2 /8C3 /8F3 /4G3
+             /4E3 /4B2 /2C3".to_notes,
+    )
+
+    # Measure 5
+    measures(
+      "1" => "/16C4 /16B3 /8C4 /4G3 /16Db4 /16C4 /8D4 /4Bb3
+              /16E4 /16D4 /16C4 /16D4 /8A4 /16G4 /16F4 /2C4".to_notes,
+      "2" => "/8G3 /8E3 /4D3 /8Bb3 /8F#3 /4F#3
+              /4E3 /8E3 /8E3 /8F3 3/8F2".to_notes,
+    )
+  end
+
+  section "Part 3" do
+    meter_change FOUR_FOUR
+    tempo_change 85
+    # Measure 1
+    measures(
+      "1" => "/2Bb3 /2F#3 1G3
+              /4D3 /4F#3 3/8Bb3 /8A3 3/4A3 /4
+              ".to_notes,
+      "2" => "/2G3 /2D3 3/4Eb3 /4C3
+              /4Bb2 /2A2 /4Eb2 3/4F2 /4".to_notes,
+    )
+
+    # Measure 5
+    measures(
+      "1" => "/2Bb3 /4C4 /4A3 3/8Bb3 /8C4 /2D4
+              /2C4 /2E4 /4F4 /4E4 /4F4 /4A4".to_notes,
+      "2" => "/2G3 /2F#3 /4G3 /4Eb3 /4F3 /4E3
+              /4F3 /4A2 /2C3 /2D3 /4G3 /4F3".to_notes,
+    )
+
+    # Measure 9
+    measures(
+      "1" => "3/8G4 /8F#4 /4G4 /4E4= 3/4E4 /4
+              /2E3 /2A3 3/4E3 /4F#3
+              1A3 1G3".to_notes,
+      "2" => "/2E3 /4Bb3 /4G3 /4G3 /2G2 /4
+              /2F#2 /2C#3 3/4C3 /4A2
+              1F2 1E2".to_notes,
+    )    
+  end
+
+  section "Part 4" do
+    meter_change THREE_FOUR
+    tempo_change 85
+  
+    # Measure 1
+    measures(
+      "1" => "/2 /8G3 /8A3".to_notes,
+    )
+
+    # Measure 2
+    measures(
+      "1" => "/2Bb3 /4D4 /4C4 /8Eb4 /8D4 /4C4
+              /4F3 /4D4 /4C4 /4A3 /4F4 /4E4".to_notes,
+      "2" => "/4Eb3 /4D3 /4G3 /2C3 /4Bb2
+              /4A2 /2F2 /4 /4F2 /4G2".to_notes,
+    )
+
+    # Measure 6
+    measures(
+      "1" => "/4Eb4 /4D4 /4D4= 2/12D4 /12C4 /4Bb3 /4Bb3
+              /4Bb3= 2/12Bb3 /12A3 /4G3 /2G3 /8F3 /8F3".to_notes,
+      "2" => "/4A2 /4Bb2 /4F2 /4D3 /4F#2 /4G2
+              /4Eb2 /4D3 /4Eb3 /4Bb2 /4G2 /8B2 /8B2".to_notes,
+    )
+
+    # Measure 10
+    measures(
+      "1" => "3/8E3".to_notes + e_notes([G3,C4,Eb4,D4,C4,D4,G4]) + [Note.quarter(G4)] + 
+             e_notes([A4,G4,G4,F4]) + "3/8F4 /8Bb4 /8Bb4 /8A4 /4A4".to_notes + 
+             "/8 /8Bb4 /8Bb4 /4A4 /8Eb4 3/4A4".to_notes,
+      "2" => "/4C3 /4G2 /8C3 /8C3 /8Bb2 /8A2 /4G2 /4Eb3
+              /4F2 /4C3 /4C3 /4Db3 /4Db4 /4A2
+              /4Eb3 /8Eb3 /8D3 /4Bb2 3/4F2".to_notes,
+    )
+  end
+
+  section "Part 5" do
+    meter_change THREE_FOUR
+    tempo_change 85
+
+    # Measure 1
+    measures(
+      "1" => "/2A3 /4G3 /2F3 /4D4
+              /2Bb3 /4A3 /2G3 /4E3
+              /2F4 /4E4 /4D4 /4D4 /4F4
+              /4G4 /4C4 /4B3 /4E4 /8F4 /4D4 /8F4".to_notes,
+      "2" => q_notes([C3,F2,C3,Db3,A2,Bb2]) +
+            "/4G2 /8D3 /8C3 /4Bb2 /2C3 /4Bb2
+            /4A2 /4F3 /4C3 /4Bb2 /4D3 /4Bb2=
+            /4Bb2 /4C3 /4G2 3/8C3 3/8G2".to_notes,
+    )
+
+    # Measure 9
+    meter_change TWO_FOUR
+    measures(
+      "1" => "/4E4 /4G4".to_notes,
+      "2" => "/2C3".to_notes,
+    )
+
+    # Measure 10
+    meter_change THREE_FOUR
+    measures(
+      "1" => "/2A4 /4C5 /2F4 /4G4
+              /4Ab4 /4G4 /4F4 /2Eb4 /4C4".to_notes + 
+              q_notes([B3,G3,B3,C4,A3,C3,
+                       D4,B3,D4,E4,C4,E4,
+                       A4,F4,A4,B4,C5,D5]) + 
+              "3/4E5".to_notes,
+      "2" => q_notes([F3,F3,E3,D3,D3,C3,
+             Bb2,Eb3,Bb2]) + "/2Ab2 /4Ab2".to_notes + 
+             q_notes([G2,C3,G2,A2,C3,F3,
+                      G3,Gb3,F3,C3,G3,Ab3,
+                      F3,E3,D3,D3,F3,G3]) +
+             "3/4C4".to_notes
+    )
+  end
+end
