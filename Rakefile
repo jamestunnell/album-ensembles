@@ -8,7 +8,7 @@ MIDI_EXT = ".mid"
 MIDIFY_EXT = ".midify"
 
 song_files = Rake::FileList["songs/*#{SONG_EXT}"]
-yml_files = song_files.ext(YAML_EXT)
+yaml_files = song_files.ext(YAML_EXT)
 midi_files = song_files.ext(MIDI_EXT)
 midify_files = song_files.ext(MIDIFY_EXT)
 
