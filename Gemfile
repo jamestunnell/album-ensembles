@@ -1,2 +1,2 @@
 source :rubygems
-gem 'musicality', '~> 0.5.0'
+gem 'musicality', '~> 0.5.1'

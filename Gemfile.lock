@@ -3,7 +3,7 @@ GEM
   specs:
     docopt (0.5.0)
     midilib (2.0.4)
-    musicality (0.5.0)
+    musicality (0.5.1)
       docopt (~> 0.5)
       midilib (~> 2.0)
       treetop (~> 1.5)
@@ -15,4 +15,4 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  musicality (~> 0.5.0)
+  musicality (~> 0.5.1)
