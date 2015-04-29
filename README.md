@@ -17,8 +17,8 @@ In the album code folder, install the remaining Ruby gem dependencies using
     $ cd album-ensembles
     $ bundle install
 
-## The DSL
-The internal DSL is built on Ruby and uses the music abstractions provided by the [musicality](https://github.com/jamestunnell/musicality) gem. A song file consists of a *score* block that defines all the notes, dynamics, tempos, etc. to produce a Musicality score object.
+## The Score DSL
+The score DSL is an internal DSL is built on Ruby and uses the music abstractions provided by the [musicality](https://github.com/jamestunnell/musicality) gem. A score file consists of a *score* block that defines all the notes, dynamics, tempos, etc. to produce a Musicality score object. For examples, see the *musicality* README.
 
 ## Building the Score
 The song file can be processed to build a YAML file that represents a Musicality score object using the command line
