@@ -1,4 +1,7 @@
 score SIX_EIGHT,50 do
+  title "Marimbas"
+  composer "James Tunnell"
+
   section "A" do
     riff1a = "/8 /8D4,F4,A4. /4D4,F4,A4 /8D4,F4,A4. /8D4,F4,A4
                /8 /4D4,F4,A4 /8 /8D4,G4,Bb4. /8D4,G4,Bb4
@@ -7,38 +10,38 @@ score SIX_EIGHT,50 do
               3/16D3 /16Db3 /8D3 /4Bb2 /8G2
               /4A2. /8 /4A2. /8".to_notes
 
-    measures(
+    notes(
       "rhand" => riff1a + "/8D4 /8F4 /8A4 3/8D5".to_notes
     )
 
-    measures(
+    notes(
       "rhand" => riff1a + "/8D4 /8F4 /8A4 3/8D5".to_notes,
       "lhand" => riff2a + "/8D2 /8F2 /8A2 3/8D2,D3".to_notes
     )
-    tempo_change 40, duration: 0.5, offset: -2
+    tempo_change 40, transition_dur: 0.5, offset: -2
     tempo_change 50, offset: -1
 
-    measures(
+    notes(
       "rhand" => riff1a + "/8D4 /8F4 /8A4 3/8D4".to_notes,
       "lhand" => riff2a + "/8D2 /8F2 /8A2 3/8D3".to_notes, 
     )
-    tempo_change 40, duration: 0.5, offset: -2
+    tempo_change 40, transition_dur: 0.5, offset: -2
     tempo_change 50, offset: -1
 
-    measures(
-      "rhand" => e_notes([D4,Bb3,D4,G4,A4,Bb4]) + 
-                 dq_notes([A4,[],[],[G4,Db5]]) + 
+    notes(
+      "rhand" => e([D4,Bb3,D4,G4,A4,Bb4]) + 
+                 dq([A4,[],[],[G4,Db5]]) + 
                  "/8D5 /8A4 /8F4 /4D4 /8A4".to_notes,
-      "lhand" => e_notes([D3,Bb2,D3,F3,E3,Db3]) + 
+      "lhand" => e([D3,Bb2,D3,F3,E3,Db3]) + 
                  "3/8D3 3/8D2 3/8A2,D3,E3 3/8Db2".to_notes + 
-                 e_notes([D2,F2,A2]) + "/4D3 /8Db3".to_notes
+                 e([D2,F2,A2]) + "/4D3 /8Db3".to_notes
     )
-    tempo_change 30, duration: 0.5, offset: -1
+    tempo_change 30, transition_dur: 0.5, offset: -1
     tempo_change 50, offset: "-1/8".to_r
 
     riff1b = "3/16A4,Db5 /16B4,D5 /8Db5,E5 /8Db5,E5 /8D5,F5 /8Db5,E5".to_notes
     riff2b = "3/16Db3,E3 /16D3,F3 /8E3,G3 /8E3,G3 /8F3,A3 /8E3,G3".to_notes
-    measures(
+    notes(
       "rhand" => riff1b + "5/8A4,D5 /8A4".to_notes + 
                  riff1b + "5/8A4,D5 /8Db5".to_notes,
       "lhand" => riff2b + "3/8D3,F3= /4D2,F3 /8Db3".to_notes +
@@ -48,42 +51,42 @@ score SIX_EIGHT,50 do
   end
 
   section "B" do
-    riff1a = e_notes([E4,Gb4,A4,G4,E4,G4,E4,Gb4,A4,Bb4,G4,Bb4])
+    riff1a = e([E4,Gb4,A4,G4,E4,G4,E4,Gb4,A4,Bb4,G4,Bb4])
     riff1b = "/8C#5. /16C#5. /16C#5. /8C#5.".to_notes
 
-    riff2a = e_notes([[Db3,E3],A2,Db3])
-    riff2b = e_notes([[C3,Eb3],A2,C3])
+    riff2a = e([[Db3,E3],A2,Db3])
+    riff2b = e([[C3,Eb3],A2,C3])
 
     
-    measures(
-      "rhand" => riff1a + e_notes([Db5,Db5,Db5,C5,D5,C5,Db5,Db5,Db5]) + 
-                 dq_notes([[Eb4,Gb4]]) + 
-                 riff1a + riff1b + e_notes([D5,A4,D5]) + 
+    notes(
+      "rhand" => riff1a + e([Db5,Db5,Db5,C5,D5,C5,Db5,Db5,Db5]) + 
+                 dq([[Eb4,Gb4]]) + 
+                 riff1a + riff1b + e([D5,A4,D5]) + 
                  riff1b + transpose(riff1b,-1) + riff1b + transpose(riff1b,1) + \
-                 (transpose(riff1b,3) + e_notes([[C5,F5],[C5,D5],[C5,F5]]))*3 +
-                 dq_notes([[A4,E5,A5],[E4,A4,Db5]]),
+                 (transpose(riff1b,3) + e([[C5,F5],[C5,D5],[C5,F5]]))*3 +
+                 dq([[A4,E5,A5],[E4,A4,Db5]]),
       "lhand" => (riff2a + riff2b)*3 + riff2a + "3/8C3,Eb3,F#3".to_notes +
                  (riff2a + riff2b)*5 +
-                 (riff2a + e_notes([C3,F2,C3]))*3 +
+                 (riff2a + e([C3,F2,C3]))*3 +
                  "3/8A2,C#3 3/8A1,E2,C#3".to_notes
     )
-    tempo_change 30, duration: 1, offset: -2
+    tempo_change 30, transition_dur: 1, offset: -2
   end
 
   section "C" do
     tempo_change 135
-    c_1 = measures(
-      "rhand" => e_notes([A5,G5,F5,G5,F5,E5,F5,E5,D5]) + "3/8A4,F5(".to_notes + 
-                 e_notes([[A4,F5],E5,D5,E5,D5,Db5,[Db5,E5],[B4,D5],[A4,Db5]]) + dq_notes([[E4,A4]]) +
-                 e_notes([Db4,D4,E4,E4,F4,G4,G4,F4,E4,[E4,G4],[D4,F4],[Db4,E4]]) +
-                 e_notes([D5,Db5,B4,[D5,F4],[Db5,E5],[B4,D5]]) + dq_notes([[A4,Db4],A4]),
+    c_1 = notes(
+      "rhand" => e([A5,G5,F5,G5,F5,E5,F5,E5,D5]) + "3/8A4,F5(".to_notes + 
+                 e([[A4,F5],E5,D5,E5,D5,Db5,[Db5,E5],[B4,D5],[A4,Db5]]) + dq([[E4,A4]]) +
+                 e([Db4,D4,E4,E4,F4,G4,G4,F4,E4,[E4,G4],[D4,F4],[Db4,E4]]) +
+                 e([D5,Db5,B4,[D5,F4],[Db5,E5],[B4,D5]]) + dq([[A4,Db4],A4]),
       "lhand" => "3/8A3 3/8G3 3/8F3 3/8D3".to_notes + 
                  "3/8F3 3/8D3 3/8A3 3/8C#3".to_notes +
                  "3/8A2 3/8C#3 3/8E3 3/8C#3,G3".to_notes +
                  "3/8B2,F3 3/8C#3,A3 3/8E3 3/8C#3".to_notes
     )
 
-    c_2 = measures(
+    c_2 = notes(
       "rhand" => "/4A4,D4 /8Ab4,E4 /4A4,F4 /8Ab4,E4 /8F4 /8D4 /8C4 3/8A3
                   /4C4 /8D4 /4E4 /8D4 /8E4 /8A4 /8G4 /8E4 /8C4 /8A3
                   /4Bb3 /8C4 /4D4 /8C4 /4Eb4,G4 /8C4 /4D4,F4 /8Eb4
@@ -95,7 +98,7 @@ score SIX_EIGHT,50 do
     )
     program.push c_2
 
-    c_3 = measures(
+    c_3 = notes(
       "rhand" => "/4A4,C5 /8Ab4,B4 /4A4,C5 /8Ab4,B4 /8C5 /8A4 /8F4 3/8C4
                   /4Bb4,D5 /8A4,Db5 /4Bb4,D5 /8A4 /8Bb4 /8C5 /8Bb4 /8A4 /8F4 /8C4
                   /4A4,C5 /8Ab4,B4 /4A4,C5 /8C4 /4Eb4,G4 /8C4 3/8D4,F4

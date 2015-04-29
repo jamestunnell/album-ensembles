@@ -52,6 +52,8 @@ parts:
       /4C4 /4E4 /4A4 /4F4 /4A4 /4B4 /4C5 /4D5 3/4E5
     start_dynamic: 0.625
     dynamic_changes: {}
+title: Duets
+composer: James Tunnell
 start_tempo: 90
 tempo_changes:
   ? !ruby/object:Rational

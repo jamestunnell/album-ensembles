@@ -165,6 +165,8 @@ parts:
       3/4Gb2= 3/8Gb2 3/8 3/4Ab2= 3/8Ab2 3/8 3/4Bb2= 3/8Bb2 3/8 1A2= /2A2 1A2 2Eb2
     start_dynamic: 0.625
     dynamic_changes: {}
+title: Trio in Ten Parts
+composer: James Tunnell
 start_tempo: 160
 tempo_changes:
   ? !ruby/object:Rational

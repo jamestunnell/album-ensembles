@@ -1,16 +1,21 @@
 require 'rake'
 
-require_relative 'songs/song_helper'
+require 'musicality'
+include Musicality
+include Pitches
+include Meters
+include Dynamics
+include Articulations
 
-SONG_EXT = ".song"
+SCORE_EXT = ".score"
 YAML_EXT = ".yml"
 MIDI_EXT = ".mid"
 MIDIFY_EXT = ".midify"
 
-song_files = Rake::FileList["songs/*#{SONG_EXT}"]
-yaml_files = song_files.ext(YAML_EXT)
-midi_files = song_files.ext(MIDI_EXT)
-midify_files = song_files.ext(MIDIFY_EXT)
+score_files = Rake::FileList["scores/*#{SCORE_EXT}"]
+yaml_files = score_files.ext(YAML_EXT)
+midi_files = score_files.ext(MIDI_EXT)
+midify_files = score_files.ext(MIDIFY_EXT)
 
 midify_files.each do |fname|
   unless File.exists? fname
@@ -32,9 +37,9 @@ task :clean do
   end
 end
 
-rule YAML_EXT => SONG_EXT do |t|
+rule YAML_EXT => SCORE_EXT do |t|
   puts "#{t.source} -> #{t.name}"
-  yml = SongDSL.load(t.source).export_yaml
+  yml = ScoreDSL.load(t.source).score_yaml
   File.write(t.name, yml)
 end
 

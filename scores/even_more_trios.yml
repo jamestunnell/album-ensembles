@@ -144,6 +144,8 @@ parts:
       /8Eb3 /2D3= 3/4D3
     start_dynamic: 0.625
     dynamic_changes: {}
+title: Even More Trios
+composer: James Tunnell
 start_tempo: 90
 tempo_changes:
   ? !ruby/object:Rational

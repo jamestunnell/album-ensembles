@@ -60,6 +60,8 @@ parts:
       /8Db3 3/8Bb2 /8Ab2 /8Db3= 3/4Db3
     start_dynamic: 0.625
     dynamic_changes: {}
+title: More Trios
+composer: James Tunnell
 start_tempo: 120
 tempo_changes:
   ? !ruby/object:Rational

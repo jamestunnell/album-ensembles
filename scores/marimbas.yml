@@ -62,6 +62,8 @@ parts:
       3/8F3
     start_dynamic: 0.625
     dynamic_changes: {}
+title: Marimbas
+composer: James Tunnell
 start_tempo: 50
 tempo_changes:
   ? !ruby/object:Rational
