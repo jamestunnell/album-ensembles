@@ -1,6 +1,6 @@
 FIVE_FOUR = Meter.new(5,"1/4".to_r)
 
-score FOUR_FOUR,90 do
+tempo_score FOUR_FOUR,90 do
   title "Even More Trios"
   composer "James Tunnell"
 
@@ -9,15 +9,15 @@ score FOUR_FOUR,90 do
     notes(
       "1" => "3/4 /4C4
               /4Db4 /4Ab3 /2Eb4
-              /4F4 /12F4 /12F4 /12Eb4= /4Eb4 /8Db4 /8C4=
-              /4C4 /8F4 /4Eb4 /8Eb4 /4C4=
+              /4F4 /12F4 /12F4 /12Eb4~ /4Eb4 /8Db4 /8C4~
+              /4C4 /8F4 /4Eb4 /8Eb4 /4C4~
               /4C4 /8Bb3 /8Ab3 /2Bb3".to_notes,
       "2" => "1
-              3/8Ab3 /8F3 /2C4=
+              3/8Ab3 /8F3 /2C4~
               /4C4 /4Db4 /4C4 /4F3
               /8Bb3 /2C4 /8Bb3 /4Ab3
               /4G3 /4Eb3 /2F3".to_notes,
-      "3" => "3/4 /4F2=
+      "3" => "3/4 /4F2~
               /4F2 /4C3 /4G3 /8Bb2 /8Ab2
               /4G2 /4Db3 /8C3 /8Db3 /4Bb2
               3/8Db3 /8C3 /8Eb3 /8F3 /4Ab2
@@ -28,15 +28,15 @@ score FOUR_FOUR,90 do
     notes(
       "1" => "/4G4 /4F4 /4Eb4 /4G4
               /2Eb4 /4G4 /4F4
-              /4Eb4 /4G4 /12F4 /12Eb4 /12Eb4= /4Eb4=
+              /4Eb4 /4G4 /12F4 /12Eb4 /12Eb4~ /4Eb4~
               /2Eb4 /2".to_notes,
       "2" => "/4Bb3 /2Eb3 /4Bb3
-              /2Ab3 /4Bb3 /4Eb3=
-              /4Eb3 /4Db3 /2G2=
+              /2Ab3 /4Bb3 /4Eb3~
+              /4Eb3 /4Db3 /2G2~
               /2G2 /2".to_notes,
       "3" => "/4Eb3 /2Db3 /8C3 /8Db3
-              /2C3 /4Eb3 /4Db3=
-              /4Db3 /4Ab2 /2Bb2=
+              /2C3 /4Eb3 /4Db3~
+              /4Db3 /4Ab2 /2Bb2~
               /2Bb2 /2".to_notes
     )
   end
@@ -63,17 +63,17 @@ score FOUR_FOUR,90 do
 
     # Measure 5
     notes(
-      "1" => "/8Ab4. /8Ab4. /4G4 /4Eb4 /4D4=
+      "1" => "/8Ab4. /8Ab4. /4G4 /4Eb4 /4D4~
               /2D4 /8C4 /8D4 /4G4
               /4Bb3 3/4A3
               /2G3 /8C4 /8D4 /4G4
               /4Bb3 3/4A3".to_notes,
-      "2" => "/4Bb3 /8Bb3 /8C4 /8Ab3 /8G3 /4F3=
+      "2" => "/4Bb3 /8Bb3 /8C4 /8Ab3 /8G3 /4F3~
               /2F3 /8G3 /8B3 /4Eb4
               /4Db4 3/4C4
               /2C4 /8G3 /8B3 /4Eb4
               /4Db4 3/4C4".to_notes,
-      "3" => "/4F3 /4Eb3 /4B2 /4Bb2=
+      "3" => "/4F3 /4Eb3 /4B2 /4Bb2~
               /2Bb2 /4Eb3 /4C3
               /4F3 3/4F3
               /2Eb3 /4Eb3 /4C3
@@ -91,17 +91,17 @@ score FOUR_FOUR,90 do
 
     # Measure 2
     notes(
-      "1" => "3/8G3 3/8Eb3=
+      "1" => "3/8G3 3/8Eb3~
               3/8Eb3 /8D3 /8Eb3 /8F3
               /4G3 /2D3
-              /4Eb3 3/8F3 /8G3=
+              /4Eb3 3/8F3 /8G3~
               3/4G3".to_notes,
-      "2" => "3/8Eb4 3/8C4=
+      "2" => "3/8Eb4 3/8C4~
               3/8C4 /4D4 /8Eb4
               /4Eb4 3/8Bb3 /8Bb3
-              /4G3 /4C4 /8Ab3 /8Eb3=
+              /4G3 /4C4 /8Ab3 /8Eb3~
               3/4Eb3".to_notes,
-      "3" => "/4C3 /8D3 3/8Ab2=
+      "3" => "/4C3 /8D3 3/8Ab2~
               3/8Ab2 /4G2 /8G2
               /4Eb2 /2F2
               3/4Ab2
@@ -110,15 +110,15 @@ score FOUR_FOUR,90 do
 
     # Measure 7
     notes(
-      "1" => "/4D3 /8F3 /4Eb3 /8Eb4=
+      "1" => "/4D3 /8F3 /4Eb3 /8Eb4~
               /4Eb4 /8D4 /4C4 /8B3
-              /4B3 /2A3=
+              /4B3 /2A3~
               3/8A3 3/8A3".to_notes,
-      "2" => "3/8D3 /4C3 /8F3=
+      "2" => "3/8D3 /4C3 /8F3~
               /4F3 /8 /4E3 /8F3
               /4G3 /2F3
               3/8D3 3/8C3".to_notes,
-      "3" => "3/8Bb2 3/8A2=
+      "3" => "3/8Bb2 3/8A2~
               3/8A2 3/8B2
               3/4G2
               3/4F2".to_notes
@@ -133,7 +133,7 @@ score FOUR_FOUR,90 do
       "3" => "3/8Ab2 3/16G2 3/16F2
               3/8G2 3/8Eb2".to_notes
     )
-    tempo_change 60, transition_dur: "3/4".to_r, offset: -1
+    tempo_change 60, transition_dur: 1 * measure_duration, offset: -1 * measure_duration
     tempo_change 90
     program.push measures # repeat
 
@@ -163,7 +163,7 @@ score FOUR_FOUR,90 do
     tempo_change 80
     # Measure 1
     notes(
-      "1" => "/8 /8Bb3 /8Bb3 /8Bb3 /4Db4 /4Eb4=".to_notes,
+      "1" => "/8 /8Bb3 /8Bb3 /8Bb3 /4Db4 /4Eb4~".to_notes,
       "2" => "/2Gb3 /2Gb3".to_notes,
       "3" => "/4Bb2 /8Eb3 /8Bb2 /4Db3 /8B3 /8Ab2".to_notes
     )
@@ -171,21 +171,21 @@ score FOUR_FOUR,90 do
     # Measure 2
     meter_change THREE_FOUR
     notes(
-      "1" => "/4Eb4 /8Gb4 /8F4 /4F4=
+      "1" => "/4Eb4 /8Gb4 /8F4 /4F4~
               /2F4 /4F4
               /4F4 /4Eb4 /4Db4
               /8C4 /8Db4 /4Gb4 /8F4 /8E4
               3/4C4
               /2Bb3 /4C4
               /4Db4 /4C4 /4Db4".to_notes,
-      "2" => "/2Eb3 /4D3=
+      "2" => "/2Eb3 /4D3~
               /2D3 /4D3
               /4Db3 /8F3 /8Gb3 /4Ab3
               3/4Bb3
               3/4F3
               /4F3 /4Eb3 /4Gb3
               /2Ab3 /4Gb3".to_notes,
-      "3" => "/4Bb2 /4A2 /4Bb2=
+      "3" => "/4Bb2 /4A2 /4Bb2~
               /2Bb2 /4A2
               /4B2 3/8Ab2 /8Bb2
               /2Db3 /4Bb2
@@ -225,7 +225,7 @@ score FOUR_FOUR,90 do
       "2" => "/8Bb3 /8C4 /4B3 /4Ab3 /4Bb3 /4Ab3 /4G3
               /4Eb3 /2F3 /4Bb3 /4Ab3 /4G3".to_notes,
       "3" => "/4F3 /4Eb3 /4D3 /4Bb2 /2
-              /2 /12Bb2 /12Bb2 /12Bb2= /4Bb2 /8Bb2 /4Bb2 /8Bb2".to_notes
+              /2 /12Bb2 /12Bb2 /12Bb2~ /4Bb2 /8Bb2 /4Bb2 /8Bb2".to_notes
     )
 
     # Measure 9
@@ -234,7 +234,7 @@ score FOUR_FOUR,90 do
               /2Db4 /8F4 /4Eb4 /8Eb4 /4F4 1Db4 ".to_notes,
       "2" => "/4Eb3 /2F3 /2Gb3 /4Ab3
               3/8Bb3 /8Bb3 /8C4 /4Bb3 /8Bb3 /4Ab3 1F3".to_notes,
-      "3" => "/4Bb2 /4 /12Bb2 /12Bb2 /12Bb2 /2Ab2= /8Ab2 /8F2
+      "3" => "/4Bb2 /4 /12Bb2 /12Bb2 /12Bb2 /2Ab2~ /8Ab2 /8F2
               /2Gb2 /8Gb2 /4Gb2 /8Gb2 /4Bb2 1Bb1".to_notes
     )
   end
@@ -246,7 +246,7 @@ score FOUR_FOUR,90 do
     # Measure 1
     notes(
       "1" => "/4Db4 /2F4 /4C4 /2Eb4 /2F4 /4Db4".to_notes +
-             e([Db4,C4,Bb3,F4,Eb4,Db4]) + [Note.quarter(C4)] + e([C4,Db4,Eb4,Db4]),
+             e(Db4,C4,Bb3,F4,Eb4,Db4) + [Note.quarter(C4)] + e(C4,Db4,Eb4,Db4),
       "2" => "/2Bb3 /8 /8Ab3 /8Gb3 /8F3 /4Eb3 /4Eb3 /4Db3 /4Eb3 /4F3
               3/8Bb3 /8A3 /4Gb3 /4F3 /2Bb3".to_notes,
       "3" => "/4Gb3 /8F3 /8Eb3 /4Db3 /2Bb2 /4Ab2 /2Bb2 /8Eb2 /8F2
@@ -268,13 +268,13 @@ score FOUR_FOUR,90 do
               /4Eb4 /4Gb4 /8Gb4 /8Db4 /4F4 /8Eb4 /8F4 /8Eb4 /8Db4
               /4C4 3/4B3 /2A3
               3/4Bb3 3/4Bb4
-              /4F4 /4G4 /4E4= 3/4E4".to_notes,
+              /4F4 /4G4 /4E4~ 3/4E4".to_notes,
       "2" => "/4F3 /4F3 3/8Gb3 /4A3 /8D3 /4F3
-              /2Gb3 /4F3 /8Eb3 /8Db3 /4B3 /4F3=
+              /2Gb3 /4F3 /8Eb3 /8Db3 /4B3 /4F3~
               /4F3 /4Eb3 /2Eb3 /2D3
               /4Eb3 /4F3 /2F3 3/4G3 5/4G3".to_notes,
-      "3" => q([C3,Bb2,Gb2,B2,A2,A2]) + 
-             "/2Bb2 /4 /4Bb2 /4Gb2 /4Bb2=
+      "3" => q(C3,Bb2,Gb2,B2,A2,A2) + 
+             "/2Bb2 /4 /4Bb2 /4Gb2 /4Bb2~
               /4Bb2 /4A2 /2Gb2 /2F2
               3/4Bb2 3/4D3 6/4C3".to_notes
     )
@@ -336,7 +336,7 @@ score FOUR_FOUR,90 do
 
     # Measure 5
     notes(
-      "1" => "/4C4 /4B3 /2F#4 /4E4 /4C#4=
+      "1" => "/4C4 /4B3 /2F#4 /4E4 /4C#4~
               /4C#4 /8D4 /8B3 /4C#4 /2E4 /8F#4 /8E4".to_notes,
       "2" => "/8F#3 /8F3 /4E3 /4D3 /4F#3 /2G#3
               /4A3 /4B3 /2A3 /4B3 /4C#4".to_notes,
@@ -361,7 +361,7 @@ score FOUR_FOUR,90 do
 #       "2" => "/2Gb3 /2B3 /2Db4 /4B3 /4Bb3
 #               /2Gb3 /2B3 /2Bb3 /4Ab3 /4Ab3".to_notes,
 #       "3" => "/2Bb2 /2Ab2 /2Gb2 /4Ab2 /4G2
-#               /2Bb2 /4F3 /2Eb3 /4Db3 /4B2 /4Bb2=".to_notes
+#               /2Bb2 /4F3 /2Eb3 /4Db3 /4B2 /4Bb2~".to_notes
 #     )
 
 #     # Measure X
@@ -421,11 +421,11 @@ score FOUR_FOUR,90 do
     #   # Measure 6
     #   notes(
     #     "1" => "/2F3 /4E3 /4F#3
-    #             /8F3 /8A3 /8Bb3 /8C4= /2C4".to_notes,
+    #             /8F3 /8A3 /8Bb3 /8C4~ /2C4".to_notes,
     #     "2" => "/4Bb2 /8C3 /8C3 /4B2 /4D3
-    #             /8D3 /8E3 /8Db3 /8C3= /2C3".to_notes,
+    #             /8D3 /8E3 /8Db3 /8C3~ /2C3".to_notes,
     #     "3" => "/4G2 /4A2 /4Ab2 /4A2
-    #             /8Bb2 /8A2 /8Gb2 /8E2= /2E2".to_notes
+    #             /8Bb2 /8A2 /8Gb2 /8E2~ /2E2".to_notes
     #   )
   end
 
@@ -445,7 +445,7 @@ score FOUR_FOUR,90 do
 
     # Measure 5
     notes(
-      "1" => "3/4C#4 /2D4 /4D4 /2D4 /4C#4=".to_notes,
+      "1" => "3/4C#4 /2D4 /4D4 /2D4 /4C#4~".to_notes,
       "2" => "/2E3 /4G3 /2B3 /4G3 /2F#3 /4E3".to_notes,
       "3" => "/4F#2 /2A2 /2B2 /4Bb2 /4A2 /4E2 /4F#2".to_notes
     )
@@ -526,11 +526,11 @@ score FOUR_FOUR,90 do
     meter_change FOUR_FOUR
     notes(
       "1" => "/4 /2D4 /8C4 /8D4 /4Eb4 /8Eb4 /8D4 /2C4
-              /4C#4 /4Eb4 /4D4 /4C#4= 1C#4".to_notes,
+              /4C#4 /4Eb4 /4D4 /4C#4~ 1C#4".to_notes,
       "2" => "/4 /2F3 /4A3 /4Bb3 /8Bb3 /8C4 /2A3
               /4 /4G3 /4F#3 /4A3 /4Eb3 3/4E3".to_notes,
       "3" => "/2G2 /2F2 /4G2 /4Bb3 /2F2
-              /4A2 /4C3 /4B2 /4A2= 1A2".to_notes
+              /4A2 /4C3 /4B2 /4A2~ 1A2".to_notes
     )
   end
 
@@ -552,11 +552,11 @@ score FOUR_FOUR,90 do
     meter_change THREE_FOUR
     notes(
       "1" => "/8C4 /8Db4 /4Eb4 /8D4 /8E4 /4F4 /4Db4 /4C4
-              /4B3 /2C4= 3/4C4".to_notes,
-      "2" => "/2Ab4 /4A4 /2Ab4 /4Gb4=
-              /4Gb4 /8 /8Ab3 /8A3 /8A3= 3/4A3".to_notes,
+              /4B3 /2C4~ 3/4C4".to_notes,
+      "2" => "/2Ab4 /4A4 /2Ab4 /4Gb4~
+              /4Gb4 /8 /8Ab3 /8A3 /8A3~ 3/4A3".to_notes,
       "3" => "/4F2 /8Eb3 /8F3 /4B2 /2Bb2 /4Ab2
-              /8Eb3 /8Eb3 /2D3= 3/4D3".to_notes
+              /8Eb3 /8Eb3 /2D3~ 3/4D3".to_notes
     )
   end
 end

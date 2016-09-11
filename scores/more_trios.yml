@@ -1,118 +1,159 @@
 ---
-type: Measured
-program:
+:packed_class: Musicality::Score::Tempo
+:start_meter:
+  :packed_class: Musicality::Meter
+  :beats_per_measure: 4
+  :beat_duration: 1/4
+:start_tempo: 120
+:tempo_changes:
+  ? !ruby/object:Rational
+    denominator: 1
+    numerator: 12
+  : :packed_class: Musicality::Change::Immediate
+    :end_value: 60
+  ? !ruby/object:Rational
+    denominator: 1
+    numerator: 20
+  : :packed_class: Musicality::Change::Immediate
+    :end_value: 95
+  ? !ruby/object:Rational
+    denominator: 1
+    numerator: 32
+  : :packed_class: Musicality::Change::Immediate
+    :end_value: 160
+:meter_changes:
+  ? !ruby/object:Rational
+    denominator: 1
+    numerator: 12
+  : :packed_class: Musicality::Change::Immediate
+    :end_value:
+      :packed_class: Musicality::Meter
+      :beats_per_measure: 4
+      :beat_duration: 1/4
+  ? !ruby/object:Rational
+    denominator: 1
+    numerator: 20
+  : :packed_class: Musicality::Change::Immediate
+    :end_value:
+      :packed_class: Musicality::Meter
+      :beats_per_measure: 3
+      :beat_duration: 1/4
+  ? !ruby/object:Rational
+    denominator: 2
+    numerator: 43
+  : :packed_class: Musicality::Change::Immediate
+    :end_value:
+      :packed_class: Musicality::Meter
+      :beats_per_measure: 4
+      :beat_duration: 1/4
+  ? !ruby/object:Rational
+    denominator: 2
+    numerator: 45
+  : :packed_class: Musicality::Change::Immediate
+    :end_value:
+      :packed_class: Musicality::Meter
+      :beats_per_measure: 3
+      :beat_duration: 1/4
+  ? !ruby/object:Rational
+    denominator: 1
+    numerator: 24
+  : :packed_class: Musicality::Change::Immediate
+    :end_value:
+      :packed_class: Musicality::Meter
+      :beats_per_measure: 4
+      :beat_duration: 1/4
+  ? !ruby/object:Rational
+    denominator: 1
+    numerator: 26
+  : :packed_class: Musicality::Change::Immediate
+    :end_value:
+      :packed_class: Musicality::Meter
+      :beats_per_measure: 3
+      :beat_duration: 1/4
+  ? !ruby/object:Rational
+    denominator: 1
+    numerator: 32
+  : :packed_class: Musicality::Change::Immediate
+    :end_value:
+      :packed_class: Musicality::Meter
+      :beats_per_measure: 4
+      :beat_duration: 1/4
+:parts:
+  '1':
+    :packed_class: Musicality::Part
+    :start_dynamic: 0.18637968601574703
+    :notes: "/8 /8F3 /4F4 /4E4 /8D4 /8C4 /8D4 /8E4 /8D4 /8C4 /4D4 /4A3 /4Bb3 /4D4
+      /2F4 /4D4 /2C4 /4D4 /8F4 /8E4 /8F4 /8A4 /4G4 /4Gb4 /8Bb4 /8A4 /8G4 3/8E4 /4C4
+      /8D4 /8E4 /8D4 /8C4 /2D4 3/8E4 /8G4 /4D4 /8Db4 /8Db4 /8 /8F3 /4F4 /4E4 /8D4
+      /8C4 /8D4 /8E4 /8D4 /8C4 /4D4 /4A3 /4Bb3 /4D4 /2F4 /4D4 /2C4 /4D4 /4Eb4 /4F4
+      /4Eb4 /4Db4 /8Bb3 /8C4 /4Db4 /4Gb4 /4F4 /8F4 /8Gb4 /4Ab4 /4Gb4 /4C4 /4Db4 /2Ab3
+      /4Bb3 /8Eb4 /8Db4 /4C4 /4Ab3 /8Gb4 /8F4 /4Eb4 /4C4 /8Db4 /8C4 /8Db4 /8F4 /8Eb4
+      /8Db4 /4C4 /2Ab3~ 3/4Ab3 /4 /2 /4Gb3 /4Db4 /4B3 /4Gb3 3/4Bb3 /4Ab3 /4Ab3 /4Gb3
+      /8Ab3 /8Bb3 3/4Eb4 /4D4 /8Eb4 /8F4 /2Gb4 /8F4 /8D4 /2D4 /4C4 /2C4 /4B3 /4B3
+      /4C4 /4Bb3 3/4B3 3/4Gb4 3/4Ab4 /4A4 /2E4~ /4E4 /2D4 3/4Eb4 /8F4 /4Eb4 /4Db4
+      /8Ab4 /4Gb4 /4F4 /8Gb4 /8F4 /8Eb4 3/8F4 /2Ab4 /2Eb4 /8F4 /4Eb4 /4Db4 /8Ab4 /4Gb4
+      /4F4 /8Gb4 /4F4 /4Eb4 /8F4 /2Ab4 /2Eb4 /8F4 /4Eb4 /4Db4 /8Ab4 /4Gb4 /4F4 /8Gb4
+      /8F4 /8Eb4 3/8F4 /2Ab4 /2Eb4 /8F4 /4Eb4 /4Db4 /8Db4 /4Ab4 /8Gb4 /4E4 /8E4 /8Gb4
+      /4E4 /8Eb4 /8Db4 /8F4 3/4Db4"
+    :dynamic_changes: {}
+    :settings: []
+  '2':
+    :packed_class: Musicality::Part
+    :start_dynamic: 0.18637968601574703
+    :notes: "/4C3 /4C3 /4G3 /4E3 /8F3 /8E3 /4F3 /4D3 /4C3 /4Bb2 /8Bb2 /8C3 /4D3 /4F3~
+      /4F3 /8F3 /8E3 /2F3 /4A3 /4Bb3 /2C4 /8G3 /4A3 /4Bb3 3/8F3 /2G3 /2Bb3 3/8C4 /8D4
+      /4Bb3 /8G3 /8G3 /4C3 /4C3 /4G3 /4E3 /8F3 /8E3 /4F3 /4D3 /4C3 /4Bb2 /8Bb2 /8C3
+      /4D3 /4F3 /4F3 /8F3 /8E3 /2F3 /4C4 /4Bb3 /4Ab3 /4Ab3 /8F3 /8G3 /2Ab3 /4Bb3 /4Gb3
+      /2F3 /8Ab3 /8Gb3 /4F3 /2Db3 /4Bb3 /8Eb3 /8F3 /4Gb3 /4Eb3 /8Eb3 /8F3 /4Gb3 /4Ab3
+      /2F3 /4F3 /4Ab3 /4Eb3 /4F3~ 3/4F3 /4 /2 /4Eb3 /4F3 /4Eb3 /4D3 3/4Eb3 /4Eb3 /4D3
+      /8Eb3 /8F3 /8Db3 /8Db3 3/4C3 3/4Bb2 /4 /4F3 /2D3 /4Eb3 /2E3 /4E3 3/4Gb3 3/4Eb3~
+      /2Eb3 /4D3~ 3/4D3 3/4C3~ /4C3 /2F3 3/4G3 1 /4Db4 /4Eb4 3/8Bb3 /8C4 /8Eb4 3/8Db4
+      /2Ab3 /4Bb3 /4Bb3 /4Ab3 /4C4 /4Db4 /8C4 /8Bb3 /8Ab3 /4F3 /8F3 /2F3 /2Gb3 /4Eb3
+      /8F3 /8Gb3 /4F3 /4Db3 /8Eb3 /8F3 /8Eb3 /4Eb3 /8F3 /4F3 /2F3 /2Gb3 3/4 /8Gb3
+      /8Gb3 /2Ab3~ /8Ab3 3/8Gb3~ /4Gb3 3/4Ab3"
+    :dynamic_changes: {}
+    :settings: []
+  '3':
+    :packed_class: Musicality::Part
+    :start_dynamic: 0.18637968601574703
+    :notes: "/4F2 /8G2 /8A2 /4C3 /4C3 3/8Bb2 /8D3 /2F3 /4G2 /8G2 /8F2 /4G2 /4A2 /8Bb2
+      /8A2 /8Bb2 /8C3 /4Bb2 /4F2 3/8A2 /8G2 /2D3 /2C3 /2Bb2 /4D3 /4E3 /4F3 /4G3 /4A3
+      /4G3 /4F3 /4Bb2 /4F2 /8G2 /8A2 /4C3 /4C3 3/8Bb2 /8D3 /4F3 /4F3 /4G2 /8G2 /8F2
+      /4G2 /4A2 /8Bb2 /8A2 /8Bb2 /8C3 /4Bb2 /4F2 /4Ab2 /4Db3 /4C3 /4Bb2 /4Eb3 3/8Db3
+      3/8Bb2 /4C3 /4Db3 /4Ab2 /4Ab2 /4Bb3 /2F2 /4Gb2 /4Ab2 /8Ab2 /8Ab2 /4Ab2 /4Ab2
+      /8Ab2 /8Ab2 /4Ab2 /4Ab2 /8Db3 /8Bb3 /8Db3 /8F3 /8Eb3 /8Db3 /4C3 /4Db2~ 3/4Db2
+      /4 /2 /4Gb2 /4F2 /4Gb2 /4B2 1Bb2 /4B2 /4Eb2 /4Gb2 3/4F2 /2F2 /4Gb2 /4Ab2 /4Bb2
+      /2F2 /4Gb2~ /4Gb2 /4Ab2 /4G2 /4B2 /2C3 3/4B2 /2B2 /4Gb2 3/4F2 3/4A2 /2F2 /4Ab2
+      3/4Bb2 1 /2Db3 3/8Bb2 /8Ab2 /2Db3 /2Ab2 /4Db3 /8C3 /8Bb2~ /2Bb2 /2Db3 3/8Bb2
+      /8Ab2 /2Db3 /2Ab2 /4Db3 /8C3 /8Bb2~ /2Bb2 /2Db3 3/8Bb2 /8Ab2 /2Db3 /2Ab2 1 /2Db3~
+      /8Db3 3/8Bb2 /8Ab2 /8Db3~ 3/4Db3"
+    :dynamic_changes: {}
+    :settings: []
+:program:
 - 0/1...4/1
 - 4/1...8/1
 - 8/1...12/1
 - 12/1...16/1
 - 16/1...20/1
-- 20/1...22/1
-- 22/1...23/1
-- 23/1...25/1
-- 25/1...27/1
-- 27/1...35/1
+- 20/1...43/2
+- 43/2...45/2
+- 45/2...24/1
+- 24/1...26/1
+- 26/1...32/1
+- 32/1...35/1
 - 35/1...38/1
 - 38/1...41/1
 - 41/1...44/1
-- 44/1...47/1
-parts:
-  '1':
-    notes: /8 /8F3 /4F4 /4E4 /8D4 /8C4 /8D4 /8E4 /8D4 /8C4 /4D4 /4A3 /4Bb3 /4D4 /2F4
-      /4D4 /2C4 /4D4 /8F4 /8E4 /8F4 /8A4 /4G4 /4Gb4 /8Bb4 /8A4 /8G4 3/8E4 /4C4 /8D4
-      /8E4 /8D4 /8C4 /2D4 3/8E4 /8G4 /4D4 /8Db4 /8Db4 /8 /8F3 /4F4 /4E4 /8D4 /8C4
-      /8D4 /8E4 /8D4 /8C4 /4D4 /4A3 /4Bb3 /4D4 /2F4 /4D4 /2C4 /4D4 /4Eb4 /4F4 /4Eb4
-      /4Db4 /8Bb3 /8C4 /4Db4 /4Gb4 /4F4 /8F4 /8Gb4 /4Ab4 /4Gb4 /4C4 /4Db4 /2Ab3 /4Bb3
-      /8Eb4 /8Db4 /4C4 /4Ab3 /8Gb4 /8F4 /4Eb4 /4C4 /8Db4 /8C4 /8Db4 /8F4 /8Eb4 /8Db4
-      /4C4 /2Ab3= 3/4Ab3 /4 /2 /4Gb3 /4Db4 /4B3 /4Gb3 3/4Bb3 /4Ab3 /4Ab3 /4Gb3 /8Ab3
-      /8Bb3 3/4Eb4 /4D4 /8Eb4 /8F4 /2Gb4 /8F4 /8D4 /2D4 /4C4 /2C4 /4B3 /4B3 /4C4 /4Bb3
-      3/4B3 3/4Gb4 3/4Ab4 /4A4 /2E4= /4E4 /2D4 3/4Eb4 /8F4 /4Eb4 /4Db4 /8Ab4 /4Gb4
-      /4F4 /8Gb4 /8F4 /8Eb4 3/8F4 /2Ab4 /2Eb4 /8F4 /4Eb4 /4Db4 /8Ab4 /4Gb4 /4F4 /8Gb4
-      /4F4 /4Eb4 /8F4 /2Ab4 /2Eb4 /8F4 /4Eb4 /4Db4 /8Ab4 /4Gb4 /4F4 /8Gb4 /8F4 /8Eb4
-      3/8F4 /2Ab4 /2Eb4 /8F4 /4Eb4 /4Db4 /8Db4 /4Ab4 /8Gb4 /4E4 /8E4 /8Gb4 /4E4 /8Eb4
-      /8Db4 /8F4 3/4Db4
-    start_dynamic: 0.625
-    dynamic_changes: {}
-  '2':
-    notes: /4C3 /4C3 /4G3 /4E3 /8F3 /8E3 /4F3 /4D3 /4C3 /4Bb2 /8Bb2 /8C3 /4D3 /4F3=
-      /4F3 /8F3 /8E3 /2F3 /4A3 /4Bb3 /2C4 /8G3 /4A3 /4Bb3 3/8F3 /2G3 /2Bb3 3/8C4 /8D4
-      /4Bb3 /8G3 /8G3 /4C3 /4C3 /4G3 /4E3 /8F3 /8E3 /4F3 /4D3 /4C3 /4Bb2 /8Bb2 /8C3
-      /4D3 /4F3 /4F3 /8F3 /8E3 /2F3 /4C4 /4Bb3 /4Ab3 /4Ab3 /8F3 /8G3 /2Ab3 /4Bb3 /4Gb3
-      /2F3 /8Ab3 /8Gb3 /4F3 /2Db3 /4Bb3 /8Eb3 /8F3 /4Gb3 /4Eb3 /8Eb3 /8F3 /4Gb3 /4Ab3
-      /2F3 /4F3 /4Ab3 /4Eb3 /4F3= 3/4F3 /4 /2 /4Eb3 /4F3 /4Eb3 /4D3 3/4Eb3 /4Eb3 /4D3
-      /8Eb3 /8F3 /8Db3 /8Db3 3/4C3 3/4Bb2 /4 /4F3 /2D3 /4Eb3 /2E3 /4E3 3/4Gb3 3/4Eb3=
-      /2Eb3 /4D3= 3/4D3 3/4C3= /4C3 /2F3 3/4G3 1 /4Db4 /4Eb4 3/8Bb3 /8C4 /8Eb4 3/8Db4
-      /2Ab3 /4Bb3 /4Bb3 /4Ab3 /4C4 /4Db4 /8C4 /8Bb3 /8Ab3 /4F3 /8F3 /2F3 /2Gb3 /4Eb3
-      /8F3 /8Gb3 /4F3 /4Db3 /8Eb3 /8F3 /8Eb3 /4Eb3 /8F3 /4F3 /2F3 /2Gb3 3/4 /8Gb3
-      /8Gb3 /2Ab3= /8Ab3 3/8Gb3= /4Gb3 3/4Ab3
-    start_dynamic: 0.625
-    dynamic_changes: {}
-  '3':
-    notes: /4F2 /8G2 /8A2 /4C3 /4C3 3/8Bb2 /8D3 /2F3 /4G2 /8G2 /8F2 /4G2 /4A2 /8Bb2
-      /8A2 /8Bb2 /8C3 /4Bb2 /4F2 3/8A2 /8G2 /2D3 /2C3 /2Bb2 /4D3 /4E3 /4F3 /4G3 /4A3
-      /4G3 /4F3 /4Bb2 /4F2 /8G2 /8A2 /4C3 /4C3 3/8Bb2 /8D3 /4F3 /4F3 /4G2 /8G2 /8F2
-      /4G2 /4A2 /8Bb2 /8A2 /8Bb2 /8C3 /4Bb2 /4F2 /4Ab2 /4Db3 /4C3 /4Bb2 /4Eb3 3/8Db3
-      3/8Bb2 /4C3 /4Db3 /4Ab2 /4Ab2 /4Bb3 /2F2 /4Gb2 /4Ab2 /8Ab2 /8Ab2 /4Ab2 /4Ab2
-      /8Ab2 /8Ab2 /4Ab2 /4Ab2 /8Db3 /8Bb3 /8Db3 /8F3 /8Eb3 /8Db3 /4C3 /4Db2= 3/4Db2
-      /4 /2 /4Gb2 /4F2 /4Gb2 /4B2 1Bb2 /4B2 /4Eb2 /4Gb2 3/4F2 /2F2 /4Gb2 /4Ab2 /4Bb2
-      /2F2 /4Gb2= /4Gb2 /4Ab2 /4G2 /4B2 /2C3 3/4B2 /2B2 /4Gb2 3/4F2 3/4A2 /2F2 /4Ab2
-      3/4Bb2 1 /2Db3 3/8Bb2 /8Ab2 /2Db3 /2Ab2 /4Db3 /8C3 /8Bb2= /2Bb2 /2Db3 3/8Bb2
-      /8Ab2 /2Db3 /2Ab2 /4Db3 /8C3 /8Bb2= /2Bb2 /2Db3 3/8Bb2 /8Ab2 /2Db3 /2Ab2 1 /2Db3=
-      /8Db3 3/8Bb2 /8Ab2 /8Db3= 3/4Db3
-    start_dynamic: 0.625
-    dynamic_changes: {}
-title: More Trios
-composer: James Tunnell
-start_tempo: 120
-tempo_changes:
-  ? !ruby/object:Rational
-    denominator: 1
-    numerator: 12
-  : end_value: 60
-    type: Immediate
-  ? !ruby/object:Rational
-    denominator: 1
-    numerator: 20
-  : end_value: 95
-    type: Immediate
-  ? !ruby/object:Rational
-    denominator: 1
-    numerator: 35
-  : end_value: 160
-    type: Immediate
-start_meter: 4/4
-meter_changes:
-  ? !ruby/object:Rational
-    denominator: 1
-    numerator: 12
-  : end_value: 4/4
-    type: Immediate
-  ? !ruby/object:Rational
-    denominator: 1
-    numerator: 20
-  : end_value: 3/4
-    type: Immediate
-  ? !ruby/object:Rational
-    denominator: 1
-    numerator: 22
-  : end_value: 4/4
-    type: Immediate
-  ? !ruby/object:Rational
-    denominator: 1
-    numerator: 23
-  : end_value: 3/4
-    type: Immediate
-  ? !ruby/object:Rational
-    denominator: 1
-    numerator: 25
-  : end_value: 4/4
-    type: Immediate
-  ? !ruby/object:Rational
-    denominator: 1
-    numerator: 27
-  : end_value: 3/4
-    type: Immediate
-  ? !ruby/object:Rational
-    denominator: 1
-    numerator: 35
-  : end_value: 4/4
-    type: Immediate
+:title: More Trios
+:composer: James Tunnell
+:sections:
+  Part 1: 0/1...12/1
+  Part 2: 12/1...20/1
+  Part 3: 20/1...32/1
+  Part 4: 32/1...44/1
+:start_key:
+  :packed_class: Musicality::Key
+  :tonic_pc: 0
+  :triad: :major
+  :accidental_pref: :sharp
+:key_changes: {}

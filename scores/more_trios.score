@@ -1,4 +1,4 @@
-score FOUR_FOUR,120 do
+tempo_score FOUR_FOUR,120 do
   title "More Trios"
   composer "James Tunnell"
 
@@ -11,7 +11,7 @@ score FOUR_FOUR,120 do
               /4D4 /2C4 /4D4".to_notes,
       "2" => "/4C3 /4C3 /4G3 /4E3
               /8F3 /8E3 /4F3 /4D3 /4C3
-              /4Bb2 /8Bb2 /8C3 /4D3 /4F3=
+              /4Bb2 /8Bb2 /8C3 /4D3 /4F3~
               /4F3 /8F3 /8E3 /2F3".to_notes,
       "3" => "/4F2 /8G2 /8A2 /4C3 /4C3
               3/8Bb2 /8D3 /2F3
@@ -31,8 +31,8 @@ score FOUR_FOUR,120 do
               3/8C4 /8D4 /4Bb3 /8G3 /8G3".to_notes,
       "3" => "3/8A2 /8G2 /2D3
               /2C3 /2Bb2".to_notes + 
-             q([D3,E3,F3,G3,
-                      A3,G3,F3,Bb2])
+             q(D3,E3,F3,G3,
+                      A3,G3,F3,Bb2)
     )
 
     # Measure 9
@@ -75,15 +75,15 @@ score FOUR_FOUR,120 do
     notes(
       "1" => "/8Eb4 /8Db4 /4C4 /4Ab3 /8Gb4 /8F4
               /4Eb4 /4C4 /8Db4 /8C4 /8Db4 /8F4
-              /8Eb4 /8Db4 /4C4 /2Ab3=
+              /8Eb4 /8Db4 /4C4 /2Ab3~
               3/4Ab3 /4".to_notes,
       "2" => "/8Eb3 /8F3 /4Gb3 /4Eb3 /8Eb3 /8F3
               /4Gb3 /4Ab3 /2F3
-              /4F3 /4Ab3 /4Eb3 /4F3=
+              /4F3 /4Ab3 /4Eb3 /4F3~
               3/4F3 /4".to_notes,
       "3" => "/4Ab2 /8Ab2 /8Ab2 /4Ab2 /4Ab2
               /8Ab2 /8Ab2 /4Ab2 /4Ab2 /8Db3 /8Bb3
-              /8Db3 /8F3 /8Eb3 /8Db3 /4C3 /4Db2=
+              /8Db3 /8F3 /8Eb3 /8Db3 /4C3 /4Db2~
               3/4Db2 /4".to_notes,
     )
   end
@@ -94,9 +94,9 @@ score FOUR_FOUR,120 do
 
     # Measure 1
     notes(
-      "1" => [Note.half] + q([Gb3,Db4,B3,Gb3]),
-      "2" => [Note.half] + q([Eb3,F3,Eb3,D3]),
-      "3" => [Note.half] + q([Gb2,F2,Gb2,B2]),
+      "1" => [Note.half] + q(Gb3,Db4,B3,Gb3),
+      "2" => [Note.half] + q(Eb3,F3,Eb3,D3),
+      "3" => [Note.half] + q(Gb2,F2,Gb2,B2),
     )
 
     # Measure 3
@@ -120,7 +120,7 @@ score FOUR_FOUR,120 do
     notes(
       "1" => "/4D4 /8Eb4 /8F4 /2Gb4 /8F4 /8D4 /2D4 /4C4".to_notes,
       "2" => "3/4Bb2 /4 /4F3 /2D3 /4Eb3".to_notes,
-      "3" => "/2F2 /4Gb2 /4Ab2 /4Bb2 /2F2 /4Gb2=".to_notes,
+      "3" => "/2F2 /4Gb2 /4Ab2 /4Bb2 /2F2 /4Gb2~".to_notes,
     )
 
     # Measure 8
@@ -128,11 +128,11 @@ score FOUR_FOUR,120 do
     notes(
       "1" => "/2C4 /4B3 /4B3 /4C4 /4Bb3
               3/4B3 3/4Gb4
-              3/4Ab4 /4A4 /2E4=
+              3/4Ab4 /4A4 /2E4~
               /4E4 /2D4 3/4Eb4".to_notes,
       "2" => "/2E3 /4E3 3/4F#3
-              3/4Eb3= /2Eb3 /4D3=
-              3/4D3 3/4C3=
+              3/4Eb3~ /2Eb3 /4D3~
+              3/4D3 3/4C3~
               /4C3 /2F3 3/4G3".to_notes,
       "3" => "/4Gb2 /4Ab2 /4G2 /4B2 /2C3
               3/4B2 /2B2 /4Gb2
@@ -160,7 +160,7 @@ score FOUR_FOUR,120 do
     )
 
     # Measure 4
-    riff3 = "/4Db3 /8C3 /8Bb2= /2Bb2
+    riff3 = "/4Db3 /8C3 /8Bb2~ /2Bb2
               /2Db3 3/8Bb2 /8Ab2
               /2Db3 /2Ab2".to_notes
     notes(
@@ -188,11 +188,11 @@ score FOUR_FOUR,120 do
               /8Gb4 /4Fb4 /8Fb4 /8Gb4 /4Fb4 /8Eb4
               /8Db4 /8F4 3/4Db4".to_notes,
       "2" => "3/4 /8Gb3 /8Gb3
-              /2Ab3= /8Ab3 3/8Gb3=
+              /2Ab3~ /8Ab3 3/8Gb3~
               /4Gb3 3/4Ab3".to_notes,
       "3" => "1
-              /2Db3= /8Db3 3/8Bb2
-              /8Ab2 /8Db3= 3/4Db3".to_notes
+              /2Db3~ /8Db3 3/8Bb2
+              /8Ab2 /8Db3~ 3/4Db3".to_notes
     )
   end
 end

@@ -1,99 +1,352 @@
 ---
-type: Measured
-program:
-- 0/1...2/1
-- 2/1...3/1
-- 3/1...6/1
-- 6/1...9/1
-- 9/1...12/1
-- 12/1...13/1
-- 13/1...14/1
-- 14/1...16/1
-- 16/1...20/1
-- 20/1...22/1
-- 22/1...24/1
-- 24/1...32/1
-- 32/1...40/1
-- 40/1...41/1
-- 41/1...49/1
-- 49/1...57/1
-- 57/1...73/1
-- 73/1...78/1
-- 78/1...81/1
-- 81/1...82/1
-- 82/1...86/1
-- 86/1...88/1
-- 88/1...90/1
-- 90/1...93/1
-- 93/1...97/1
-- 97/1...99/1
-- 93/1...97/1
-- 99/1...102/1
-- 102/1...103/1
-- 103/1...106/1
-- 106/1...107/1
-- 107/1...110/1
-- 110/1...111/1
-- 111/1...112/1
-- 112/1...114/1
-- 114/1...116/1
-- 112/1...114/1
-- 116/1...121/1
-- 112/1...114/1
-- 121/1...124/1
-- 124/1...125/1
-- 125/1...131/1
-- 131/1...135/1
-- 135/1...140/1
-- 140/1...145/1
-- 145/1...149/1
-- 149/1...153/1
-- 153/1...158/1
-- 158/1...161/1
-- 161/1...168/1
-- 168/1...174/1
-- 174/1...175/1
-- 175/1...176/1
-- 176/1...179/1
-parts:
+:packed_class: Musicality::Score::Tempo
+:start_meter:
+  :packed_class: Musicality::Meter
+  :beats_per_measure: 3
+  :beat_duration: 1/4
+:start_tempo: 160
+:tempo_changes:
+  ? !ruby/object:Rational
+    denominator: 1
+    numerator: 16
+  : :packed_class: Musicality::Change::Immediate
+    :end_value: 160
+  30.1875:
+    :packed_class: Musicality::Change::Gradual
+    :end_value: 90
+    :duration: !ruby/object:Rational
+      denominator: 4
+      numerator: 3
+    :transition: :linear
+    :start_value: 
+  ? !ruby/object:Rational
+    denominator: 2
+    numerator: 63
+  : :packed_class: Musicality::Change::Gradual
+    :end_value: 160
+    :duration: !ruby/object:Rational
+      denominator: 4
+      numerator: 3
+    :transition: :linear
+    :start_value: 
+  ? !ruby/object:Rational
+    denominator: 4
+    numerator: 129
+  : :packed_class: Musicality::Change::Immediate
+    :end_value: 225
+  ? !ruby/object:Rational
+    denominator: 1
+    numerator: 60
+  : :packed_class: Musicality::Change::Immediate
+    :end_value: 90
+  ? !ruby/object:Rational
+    denominator: 2
+    numerator: 143
+  : :packed_class: Musicality::Change::Immediate
+    :end_value: 120
+  ? !ruby/object:Rational
+    denominator: 1
+    numerator: 79
+  : :packed_class: Musicality::Change::Immediate
+    :end_value: 80
+  ? !ruby/object:Rational
+    denominator: 2
+    numerator: 175
+  : :packed_class: Musicality::Change::Immediate
+    :end_value: 105
+  ? !ruby/object:Rational
+    denominator: 2
+    numerator: 195
+  : :packed_class: Musicality::Change::Gradual
+    :end_value: 90
+    :duration: 1.5
+    :transition: :linear
+    :start_value: 
+  ? !ruby/object:Rational
+    denominator: 2
+    numerator: 201
+  : :packed_class: Musicality::Change::Immediate
+    :end_value: 120
+  ? !ruby/object:Rational
+    denominator: 4
+    numerator: 481
+  : :packed_class: Musicality::Change::Immediate
+    :end_value: 60
+  ? !ruby/object:Rational
+    denominator: 1
+    numerator: 130
+  : :packed_class: Musicality::Change::Gradual
+    :end_value: 45
+    :duration: !ruby/object:Rational
+      denominator: 4
+      numerator: 3
+    :transition: :linear
+    :start_value: 
+  ? !ruby/object:Rational
+    denominator: 4
+    numerator: 529
+  : :packed_class: Musicality::Change::Immediate
+    :end_value: 95
+:meter_changes:
+  ? !ruby/object:Rational
+    denominator: 2
+    numerator: 3
+  : :packed_class: Musicality::Change::Immediate
+    :end_value:
+      :packed_class: Musicality::Meter
+      :beats_per_measure: 5
+      :beat_duration: 1/4
+  ? !ruby/object:Rational
+    denominator: 4
+    numerator: 11
+  : :packed_class: Musicality::Change::Immediate
+    :end_value:
+      :packed_class: Musicality::Meter
+      :beats_per_measure: 3
+      :beat_duration: 1/4
+  ? !ruby/object:Rational
+    denominator: 4
+    numerator: 41
+  : :packed_class: Musicality::Change::Immediate
+    :end_value:
+      :packed_class: Musicality::Meter
+      :beats_per_measure: 5
+      :beat_duration: 1/4
+  ? !ruby/object:Rational
+    denominator: 2
+    numerator: 23
+  : :packed_class: Musicality::Change::Immediate
+    :end_value:
+      :packed_class: Musicality::Meter
+      :beats_per_measure: 3
+      :beat_duration: 1/4
+  ? !ruby/object:Rational
+    denominator: 1
+    numerator: 16
+  : :packed_class: Musicality::Change::Immediate
+    :end_value:
+      :packed_class: Musicality::Meter
+      :beats_per_measure: 3
+      :beat_duration: 1/4
+  ? !ruby/object:Rational
+    denominator: 2
+    numerator: 35
+  : :packed_class: Musicality::Change::Immediate
+    :end_value:
+      :packed_class: Musicality::Meter
+      :beats_per_measure: 4
+      :beat_duration: 1/4
+  ? !ruby/object:Rational
+    denominator: 2
+    numerator: 39
+  : :packed_class: Musicality::Change::Immediate
+    :end_value:
+      :packed_class: Musicality::Meter
+      :beats_per_measure: 3
+      :beat_duration: 1/4
+  ? !ruby/object:Rational
+    denominator: 4
+    numerator: 129
+  : :packed_class: Musicality::Change::Immediate
+    :end_value:
+      :packed_class: Musicality::Meter
+      :beats_per_measure: 3
+      :beat_duration: 1/4
+  ? !ruby/object:Rational
+    denominator: 1
+    numerator: 60
+  : :packed_class: Musicality::Change::Immediate
+    :end_value:
+      :packed_class: Musicality::Meter
+      :beats_per_measure: 3
+      :beat_duration: 1/4
+  ? !ruby/object:Rational
+    denominator: 4
+    numerator: 249
+  : :packed_class: Musicality::Change::Immediate
+    :end_value:
+      :packed_class: Musicality::Meter
+      :beats_per_measure: 4
+      :beat_duration: 1/4
+  ? !ruby/object:Rational
+    denominator: 4
+    numerator: 253
+  : :packed_class: Musicality::Change::Immediate
+    :end_value:
+      :packed_class: Musicality::Meter
+      :beats_per_measure: 3
+      :beat_duration: 1/4
+  ? !ruby/object:Rational
+    denominator: 2
+    numerator: 143
+  : :packed_class: Musicality::Change::Immediate
+    :end_value:
+      :packed_class: Musicality::Meter
+      :beats_per_measure: 5
+      :beat_duration: 1/4
+  ? !ruby/object:Rational
+    denominator: 1
+    numerator: 79
+  : :packed_class: Musicality::Change::Immediate
+    :end_value:
+      :packed_class: Musicality::Meter
+      :beats_per_measure: 3
+      :beat_duration: 1/4
+  ? !ruby/object:Rational
+    denominator: 4
+    numerator: 325
+  : :packed_class: Musicality::Change::Immediate
+    :end_value:
+      :packed_class: Musicality::Meter
+      :beats_per_measure: 2
+      :beat_duration: 1/4
+  ? !ruby/object:Rational
+    denominator: 4
+    numerator: 327
+  : :packed_class: Musicality::Change::Immediate
+    :end_value:
+      :packed_class: Musicality::Meter
+      :beats_per_measure: 3
+      :beat_duration: 1/4
+  ? !ruby/object:Rational
+    denominator: 1
+    numerator: 84
+  : :packed_class: Musicality::Change::Immediate
+    :end_value:
+      :packed_class: Musicality::Meter
+      :beats_per_measure: 2
+      :beat_duration: 1/4
+  ? !ruby/object:Rational
+    denominator: 2
+    numerator: 169
+  : :packed_class: Musicality::Change::Immediate
+    :end_value:
+      :packed_class: Musicality::Meter
+      :beats_per_measure: 3
+      :beat_duration: 1/4
+  ? !ruby/object:Rational
+    denominator: 2
+    numerator: 175
+  : :packed_class: Musicality::Change::Immediate
+    :end_value:
+      :packed_class: Musicality::Meter
+      :beats_per_measure: 4
+      :beat_duration: 1/4
+  ? !ruby/object:Rational
+    denominator: 2
+    numerator: 201
+  : :packed_class: Musicality::Change::Immediate
+    :end_value:
+      :packed_class: Musicality::Meter
+      :beats_per_measure: 4
+      :beat_duration: 1/4
+  ? !ruby/object:Rational
+    denominator: 2
+    numerator: 223
+  : :packed_class: Musicality::Change::Immediate
+    :end_value:
+      :packed_class: Musicality::Meter
+      :beats_per_measure: 3
+      :beat_duration: 1/4
+  ? !ruby/object:Rational
+    denominator: 4
+    numerator: 461
+  : :packed_class: Musicality::Change::Immediate
+    :end_value:
+      :packed_class: Musicality::Meter
+      :beats_per_measure: 4
+      :beat_duration: 1/4
+  ? !ruby/object:Rational
+    denominator: 4
+    numerator: 481
+  : :packed_class: Musicality::Change::Immediate
+    :end_value:
+      :packed_class: Musicality::Meter
+      :beats_per_measure: 2
+      :beat_duration: 3/8
+  ? !ruby/object:Rational
+    denominator: 4
+    numerator: 529
+  : :packed_class: Musicality::Change::Immediate
+    :end_value:
+      :packed_class: Musicality::Meter
+      :beats_per_measure: 4
+      :beat_duration: 1/4
+  ? !ruby/object:Rational
+    denominator: 4
+    numerator: 557
+  : :packed_class: Musicality::Change::Immediate
+    :end_value:
+      :packed_class: Musicality::Meter
+      :beats_per_measure: 3
+      :beat_duration: 1/4
+  ? !ruby/object:Rational
+    denominator: 4
+    numerator: 575
+  : :packed_class: Musicality::Change::Immediate
+    :end_value:
+      :packed_class: Musicality::Meter
+      :beats_per_measure: 4
+      :beat_duration: 1/4
+  ? !ruby/object:Rational
+    denominator: 4
+    numerator: 579
+  : :packed_class: Musicality::Change::Immediate
+    :end_value:
+      :packed_class: Musicality::Meter
+      :beats_per_measure: 2
+      :beat_duration: 1/4
+  ? !ruby/object:Rational
+    denominator: 4
+    numerator: 581
+  : :packed_class: Musicality::Change::Immediate
+    :end_value:
+      :packed_class: Musicality::Meter
+      :beats_per_measure: 4
+      :beat_duration: 1/4
+:parts:
   '1':
-    notes: /4B3 /2Bb3 /2Db4 /4Gb4 /4F4 /4Db4 /2Db4= /8Db4 /8F4 3/4Eb4 /2F4 /4Db4 /4Eb4
-      /8Db4 /8C4 /4Db4 /4Db4 /2F4 /4Gb4 /4Ab4 /4Db4 /4Eb4 /2Db4 /2Db4 /4C4 /2Db4 /4C4
-      /4Eb3 /2Bb3 /2Db4 /4Gb4 /4F4 /4Db4 /2Db4= /8Db4 /8F4 /2Eb4 /8Db4 /8C4 /8C4 /8Bb3
-      /2C4 /4Db4 /2Bb3= 3/4Bb3 3/2Bb3 3/2 2 3/4 3/4 3/4 /2 /8F4 /8Eb4 /2F4 /4Db4 /4C4
-      /4Gb4 /4Gb4 /4F4 /2Eb4 /4F4 /4Db4 /8F4 /8Eb4 /2F4 /4Db4 /4C4 /4Gb4 /4Gb4 /4F4
-      /2Eb4 /4F4 /4Db4 /8F4 /8Eb4 /2F4 /4Db4 /4C4 /4Gb4 /4Bb4 /4A4 /4A4 /4C5 3/4Bb4
-      /4Bb4 /2 6 /4F3 /2D4 /4G3 /2Eb4 /4F3 /2D4 /4C4 /4D4 /4C4 /4F3 /2D4 /4G3 /2Eb4
-      /4A3 /4 /4A3 3/4D4 /4G3 /4C4 /4Bb3 /4G3 /4 /4C3 /4D3 /2 3/4 /4G3 /4C4 /4Bb3
-      /4Eb4 /4 /4Eb4 /4D4 /2 3/4 /4G3 /4C4 /4Bb3 /4G3 /4 /4C3 /4D3 /2 3/4 /4G3 /4C4
-      /4Bb3 /4Eb4 /4 /4Eb4 /4D4 /2 3/4 /4G3 /4C4 /4D4 /4Eb4 /4Bb3 /4Bb3 /4D3 /4Eb4
-      /4Eb4 3/2D3 /4A2 /4C3 /4Bb3 /4Bb3 /4D4 /4D4 /4D3 /4C3 /4Eb3 /4F3 /2E3 /4C3 /2Bb2
-      /4Eb3 /2D3 /4Eb3 /2D3 /4Eb3 /2D3 /4Eb3 /12Eb4 /12Eb4 /12Eb4 /2Eb4 /12D4 /12Eb4
-      /12D4 /2C4 /8C4 /8D4= /12D4 /12C4 /12Bb3 /4C4 /4F4 /4D4 /4C4 /8F3 /8G3 /4Bb3
-      /4A3 /8G3 /8F3 /8A3 /4C4 /8Bb3 3/4D4 /8Db4. /16Db4 /16C4 /8Bb3 /4Eb4 /8Db4.
-      /4Ab3 /4Bb3 /8F4. /16F4 /16Eb4 /8Db4 /4Gb4 /8F4. /4C4 /4Bb3 /8Db4. /16Db4 /16C4
-      /8Bb3 /4Eb4 /8Db4. /4Ab3 /4Bb3 /8F4. /16F4 /16Eb4 /8Db4 /4Gb4 /8F4. /2Db4 /8F4
-      /16F4 /16E4 /8F4 /8G4 /8A4 /8G4 3/8E4 /8Eb4 /8F4 /16F4 /16E4 /8F4 /8G4 /8A4
-      /8G4 3/16E4 /16E4 /4Eb4 /8 /8Eb4 /8 /8Db4 /4C4 /4E4 /4F4 /4G4 /8Ab4 /8G4 /4Eb4
-      /4F4 /4F4 /4C4 /8 /8C4 /8C4 /8Db4 /4 /4Ab3 3/8Bb3 /8 /8Ab4 /8G4 /4Eb4 /4F4 /4F4
-      /4C4 /8 /8Eb4 /8 /8Db4 /4C4 /4E4 /4F4 /4G4 /8Ab4 /8G4 /4Eb4 /4F4 /4F4 /2E4 3/4
-      3/16D3 /16Eb3 /2G3 /2F3 /4Bb3 /2Eb4 /4F4 /2G3 /2F3 /2Ab3 /4G3 /4F3 /2Eb4 /4D4
-      /8C4 /8Eb4 /4D4= /12D4 /12Eb4 /12F4 /4D4 /4C4 /4Eb4= /12Eb4 /12F4 /12G4 /4F4
-      /4C4 /4Ab3 /4Bb3 /8C4 /16D4 /16C4 /8Bb3 /8D4 3/4C4 3/16D3 /16Eb3 /2G3 /2F3 /2Ab3
-      /4G3 /4F3 1G3 3/4 /4Bb3 3/8C4 /8F4 /4Eb4 /4C4 /8F4 /8Eb4 /4D4 3/8Eb4 /8F4 3/4D4
-      /4D4 /2F4 /2G4 /2C4 /2Gb4 1F4 /2F4 /4F4 /8F4 /8Gb4 /2G4 /4F4 /4Eb4 3/4D4 /4C4
-      /2D4 /4D4 /4Eb4 /2F4 /4D4 /4Eb4 /2F4 /8D4 /8Eb4 /2F4 /4D4 /4C4 3/4Bb3 /4Db4
-      1C4 /4Bb3 /8Eb4 /8D4 /2C4 /4D4 /8Eb4 /8F4 /8Eb4 3/8D4 /2Db4 /4D4 /4Db4 1D4 3/8B3
-      /4B3 /8G3 3/8C4 3/8Gb3 /4E3 /8G3 /4C4 /8B3 3/4Bb3 3/8B3 /4B3 /8G3 3/8C4 3/8Gb3
-      /4E3 /4D4 /8D4 /8E4 3/8Gb4= /4Gb4 /8D4 /8B3 3/16C4 /16B3 /4A3 /8G3 3/8Gb3 /8D3
-      /8G3 /8A3 /8B3 3/16C4 /16B3 /4A3 /8G3 /4E3 /8Gb3 /8G3 /8C4 /8E4 3/8Gb4= /4Gb4
-      /8D4 /8D4 /8D4 /8D4 /8D4 /8D4 /8D4 /8D4 /8D4 /8D4 /8E4 /8E4 /8G4 3/4Gb4 /2 /2Gb3
-      /2F3 /4Db3 /4Eb3 1Eb3= 3/4Eb3 /4 3/4 /4Db3 1C3 1 3/4 /4F3 /4Ab3 /4F3 3/4 /4F3
-      /4Ab3 /4F3 3/4 /4F3 /4Ab3 /4F3 1Db3 /2G3 1Db3 2C3
-    start_dynamic: 0.625
-    dynamic_changes: {}
+    :packed_class: Musicality::Part
+    :start_dynamic: 0.18637968601574703
+    :notes: "/4B3 /2Bb3 /2Db4 /4Gb4 /4F4 /4Db4 /2Db4~ /8Db4 /8F4 3/4Eb4 /2F4 /4Db4
+      /4Eb4 /8Db4 /8C4 /4Db4 /4Db4 /2F4 /4Gb4 /4Ab4 /4Db4 /4Eb4 /2Db4 /2Db4 /4C4 /2Db4
+      /4C4 /4Eb3 /2Bb3 /2Db4 /4Gb4 /4F4 /4Db4 /2Db4~ /8Db4 /8F4 /2Eb4 /8Db4 /8C4 /8C4
+      /8Bb3 /2C4 /4Db4 /2Bb3~ 3/4Bb3 3/2Bb3 3/2 2 3/4 3/4 3/4 /2 /8F4 /8Eb4 /2F4 /4Db4
+      /4C4 /4Gb4 /4Gb4 /4F4 /2Eb4 /4F4 /4Db4 /8F4 /8Eb4 /2F4 /4Db4 /4C4 /4Gb4 /4Gb4
+      /4F4 /2Eb4 /4F4 /4Db4 /8F4 /8Eb4 /2F4 /4Db4 /4C4 /4Gb4 /4Bb4 /4A4 /4A4 /4C5
+      3/4Bb4 /4Bb4 /2 6 /4F3 /2D4 /4G3 /2Eb4 /4F3 /2D4 /4C4 /4D4 /4C4 /4F3 /2D4 /4G3
+      /2Eb4 /4A3 /4 /4A3 3/4D4 /4G3 /4C4 /4Bb3 /4G3 /4 /4C3 /4D3 /2 3/4 /4G3 /4C4
+      /4Bb3 /4Eb4 /4 /4Eb4 /4D4 /2 3/4 /4G3 /4C4 /4Bb3 /4G3 /4 /4C3 /4D3 /2 3/4 /4G3
+      /4C4 /4Bb3 /4Eb4 /4 /4Eb4 /4D4 /2 3/4 /4G3 /4C4 /4D4 /4Eb4 /4Bb3 /4Bb3 /4D3
+      /4Eb4 /4Eb4 3/2D3 /4A2 /4C3 /4Bb3 /4Bb3 /4D4 /4D4 /4D3 /4C3 /4Eb3 /4F3 /2E3
+      /4C3 /2Bb2 /4Eb3 /2D3 /4Eb3 /2D3 /4Eb3 /2D3 /4Eb3 /12Eb4 /12Eb4 /12Eb4 /2Eb4
+      /12D4 /12Eb4 /12D4 /2C4 /8C4 /8D4~ /12D4 /12C4 /12Bb3 /4C4 /4F4 /4D4 /4C4 /8F3
+      /8G3 /4Bb3 /4A3 /8G3 /8F3 /8A3 /4C4 /8Bb3 3/4D4 /8Db4. /16Db4 /16C4 /8Bb3 /4Eb4
+      /8Db4. /4Ab3 /4Bb3 /8F4. /16F4 /16Eb4 /8Db4 /4Gb4 /8F4. /4C4 /4Bb3 /8Db4. /16Db4
+      /16C4 /8Bb3 /4Eb4 /8Db4. /4Ab3 /4Bb3 /8F4. /16F4 /16Eb4 /8Db4 /4Gb4 /8F4. /2Db4
+      /8F4 /16F4 /16E4 /8F4 /8G4 /8A4 /8G4 3/8E4 /8Eb4 /8F4 /16F4 /16E4 /8F4 /8G4
+      /8A4 /8G4 3/16E4 /16E4 /4Eb4 /8 /8Eb4 /8 /8Db4 /4C4 /4E4 /4F4 /4G4 /8Ab4 /8G4
+      /4Eb4 /4F4 /4F4 /4C4 /8 /8C4 /8C4 /8Db4 /4 /4Ab3 3/8Bb3 /8 /8Ab4 /8G4 /4Eb4
+      /4F4 /4F4 /4C4 /8 /8Eb4 /8 /8Db4 /4C4 /4E4 /4F4 /4G4 /8Ab4 /8G4 /4Eb4 /4F4 /4F4
+      /2E4 3/4 3/16D3 /16Eb3 /2G3 /2F3 /4Bb3 /2Eb4 /4F4 /2G3 /2F3 /2Ab3 /4G3 /4F3
+      /2Eb4 /4D4 /8C4 /8Eb4 /4D4~ /12D4 /12Eb4 /12F4 /4D4 /4C4 /4Eb4~ /12Eb4 /12F4
+      /12G4 /4F4 /4C4 /4Ab3 /4Bb3 /8C4 /16D4 /16C4 /8Bb3 /8D4 3/4C4 3/16D3 /16Eb3
+      /2G3 /2F3 /2Ab3 /4G3 /4F3 1G3 3/4 /4Bb3 3/8C4 /8F4 /4Eb4 /4C4 /8F4 /8Eb4 /4D4
+      3/8Eb4 /8F4 3/4D4 /4D4 /2F4 /2G4 /2C4 /2Gb4 1F4 /2F4 /4F4 /8F4 /8Gb4 /2G4 /4F4
+      /4Eb4 3/4D4 /4C4 /2D4 /4D4 /4Eb4 /2F4 /4D4 /4Eb4 /2F4 /8D4 /8Eb4 /2F4 /4D4 /4C4
+      3/4Bb3 /4Db4 1C4 /4Bb3 /8Eb4 /8D4 /2C4 /4D4 /8Eb4 /8F4 /8Eb4 3/8D4 /2Db4 /4D4
+      /4Db4 1D4 3/8B3 /4B3 /8G3 3/8C4 3/8Gb3 /4E3 /8G3 /4C4 /8B3 3/4Bb3 3/8B3 /4B3
+      /8G3 3/8C4 3/8Gb3 /4E3 /4D4 /8D4 /8E4 3/8Gb4~ /4Gb4 /8D4 /8B3 3/16C4 /16B3 /4A3
+      /8G3 3/8Gb3 /8D3 /8G3 /8A3 /8B3 3/16C4 /16B3 /4A3 /8G3 /4E3 /8Gb3 /8G3 /8C4
+      /8E4 3/8Gb4~ /4Gb4 /8D4 /8D4 /8D4 /8D4 /8D4 /8D4 /8D4 /8D4 /8D4 /8D4 /8E4 /8E4
+      /8G4 3/4Gb4 /2 /2Gb3 /2F3 /4Db3 /4Eb3 1Eb3~ 3/4Eb3 /4 3/4 /4Db3 1C3 1 3/4 /4F3
+      /4Ab3 /4F3 3/4 /4F3 /4Ab3 /4F3 3/4 /4F3 /4Ab3 /4F3 1Db3 /2G3 1Db3 2C3"
+    :dynamic_changes: {}
+    :settings: []
   '2':
-    notes: 3/8Eb3 /8Db4 /4Gb4 /2F4 /4Eb4 3/8Bb3 /8Eb4 3/8F4 /8Bb3 /4Bb3 3/4C4 3/4C4
+    :packed_class: Musicality::Part
+    :start_dynamic: 0.18637968601574703
+    :notes: 3/8Eb3 /8Db4 /4Gb4 /2F4 /4Eb4 3/8Bb3 /8Eb4 3/8F4 /8Bb3 /4Bb3 3/4C4 3/4C4
       /4Eb4 /4Db4 /4C4 /4Bb3 /2Ab3 /4Gb4 /2Ab3 3/8F3 /8Gb3 /8F3 /8Gb3 3/4Ab3 /2Db3
       /4C3 3/8Eb3 /8Db4 /4Gb4 /2F4 /4Eb4 3/8Bb3 /8F4 3/8F4 /8Bb3 /4Bb3 /4Eb4 /4Db4
       /4C4 /4Bb3 /4C4 /4Bb3 /4Ab3 /2Gb3 /4Ab3 /2Eb3 3/2Eb3 3/2 2 /4F3 /4 /4Bb3 /4Eb3
@@ -110,32 +363,34 @@ parts:
       /4F3 /8E3 /8F3 /8E3 /8A3 /4G3 /2A3 /2Bb3 /8A3 /8G3 3/4A3 /4F3 /4Eb3 /8Eb3 /8D3
       /4G3 /8F3 /8D3 /4D3 /4C3 /8F3 /8D3 /4D3 /4C3 /2F3 /4Gb3 /4Bb3 /8Bb3 /8G3 /4Eb3
       /2F3 /4G3 /4Bb3 /4A3 /4G3 3/4F3 /8D3 3/8C3 /4F3 /8Eb3 /8D3 /4D3 /4F3 3/4F3 /8Ab3.
-      /8Ab3 /8Gb3 /8Gb3 /8F3. /8F3= /2F3 /8Ab3. /8Ab3 /8Gb3 /8Gb3 /8F3. /8F3= /2F3
-      /8Ab3. /8Ab3 /8Gb3 /8Gb3 /8F3. /8F3= /2F3 /8Ab3. /8Ab3 /8Gb3 /8Gb3 /8F3. /8F3=
+      /8Ab3 /8Gb3 /8Gb3 /8F3. /8F3~ /2F3 /8Ab3. /8Ab3 /8Gb3 /8Gb3 /8F3. /8F3~ /2F3
+      /8Ab3. /8Ab3 /8Gb3 /8Gb3 /8F3. /8F3~ /2F3 /8Ab3. /8Ab3 /8Gb3 /8Gb3 /8F3. /8F3~
       /2F3 /8Ab3 /8Ab3 /8Bb3 /8Bb3 /8A3 /8A3 3/8C4 /8Bb3 /8Ab3 /8Ab3 /8Bb3 /8Bb3 /8A3
       /8A3 3/8C4 /8Bb3 /8C4 /8 /8Ab3 /8 /8 /8F3 /8E3 /8G3 /4Bb3 /4C4 /8C4 /8 /8Ab3
       /8 /8F3 /8Ab3 /4F3 /4E3 /8 /8F3 /8Ab3 /8Gb3 /8 /8Ab3 /4F3 3/8Eb3 /8 /8C4 /8
       /8Ab3 /8 /8F3 /8Ab3 /2G3 /8C4 /8 /8Ab3 /8 /8 /8F3 /8E3 /8G3 /4Bb3 /4C4 /8C4
-      /8 /8Ab3 /8 /8F3 /8Ab3 /4F3 /2G3 1 /2Bb2 /4Db3= /12Db3 /12Eb3 /12F3 /4Eb3= /12Eb3
-      /12D3 /12Eb3 /4Bb2 /8D3 /8Eb3 /2Bb2 /4Db3= /12Db3 /12Eb3 /12F3 /2Eb3 /2D3 /4Bb3
+      /8 /8Ab3 /8 /8F3 /8Ab3 /4F3 /2G3 1 /2Bb2 /4Db3~ /12Db3 /12Eb3 /12F3 /4Eb3~ /12Eb3
+      /12D3 /12Eb3 /4Bb2 /8D3 /8Eb3 /2Bb2 /4Db3~ /12Db3 /12Eb3 /12F3 /2Eb3 /2D3 /4Bb3
       /4Ab3 /8F3 /8Eb3 /8Eb3 /8G3 /4A3 /2F3 /4Ab3 /2G3 /4Bb3 /4Ab3 /4F3 /2G3 /4E3
       3/4F3 /4 /2Bb2 /4Db3 /8Eb3 /8F3 /2Eb3 /2D3 1Bb2 3/4 /8G3 /8F3 /2Eb3 /4G3 /4Ab3
       /8Ab3 /8G3 3/8F3 3/8C3 3/4F3 /4F3 /2G3 /2Bb3 /4G3 /2Bb3 /4Bb3 1D4 /4C4 /4D4
       /8Eb4 /8D4 /4C4 /2Bb3 /2A3 /2A3 /4G3 /2F3 /4C4 /4Bb3 /4G3 /2C4 /4B3 /4C4 /2G3
-      /4A3 /4F3 /4A3= /4A3 /4F3 /4C3 /2Eb3 /4F3 1F3 /4G3 /8G3 /8A3 /4Gb3 /4A3 /8Bb3
-      /8A3 /8Bb3 /8D4 /8C4 /8Bb3 /4A3= /4A3 /4A3 /4F3 /4G3 1Gb3 5/8G3 /8E3 /4Eb3 /8Eb3
-      /8Eb3 /8E3 /8Gb3 /4C3 /8B3 3/8A3 /8E3 /8D3 /8Db3 /4Bb2 /8D3 3/8G3= /4G3 /8E3
+      /4A3 /4F3 /4A3~ /4A3 /4F3 /4C3 /2Eb3 /4F3 1F3 /4G3 /8G3 /8A3 /4Gb3 /4A3 /8Bb3
+      /8A3 /8Bb3 /8D4 /8C4 /8Bb3 /4A3~ /4A3 /4A3 /4F3 /4G3 1Gb3 5/8G3 /8E3 /4Eb3 /8Eb3
+      /8Eb3 /8E3 /8Gb3 /4C3 /8B3 3/8A3 /8E3 /8D3 /8Db3 /4Bb2 /8D3 3/8G3~ /4G3 /8E3
       /4Eb3 /8Eb3 /8Eb3 /8E3 /8Gb3 /8C3 /4B3 /4A3 /8B3 3/8B3 /4Bb3 /8B3 /4G3 3/8Gb3
-      /8D3 /4E3 /8D3 /8A2 /4B2 /8Gb3 /8E3 /8G3 /8Gb3 /8E3 /8D3 /8Gb3 /8E3= /2E3 3/8E3
-      3/8Gb3 3/8B3 /8A3 /8B3 /8C4 3/8B3 /4Bb3 /8Db4 3/4Eb4 1 /2Db3 /4Bb2 /4Ab2 1Ab2=
+      /8D3 /4E3 /8D3 /8A2 /4B2 /8Gb3 /8E3 /8G3 /8Gb3 /8E3 /8D3 /8Gb3 /8E3~ /2E3 3/8E3
+      3/8Gb3 3/8B3 /8A3 /8B3 /8C4 3/8B3 /4Bb3 /8Db4 3/4Eb4 1 /2Db3 /4Bb2 /4Ab2 1Ab2~
       3/4Ab2 /4C3 1Bb2 1Ab2 1 /4 /4Db3 /4C3 /4Db3 /4Eb3 /4Db3 /4 /4Db3 /4C3 /4Db3
       /4Eb3 /4Db3 /4 /4Db3 /4C3 /4Db3 /4Eb3 /4Db3 1 /2Eb3 1 2Ab2
-    start_dynamic: 0.625
-    dynamic_changes: {}
+    :dynamic_changes: {}
+    :settings: []
   '3':
-    notes: /8Gb2 /4Ab2 3/8Eb3= /2Eb3 /4 /4Gb3 /4F3 /2Db3 /4Eb3 3/4Eb3 /2Ab2 /4Gb2
+    :packed_class: Musicality::Part
+    :start_dynamic: 0.18637968601574703
+    :notes: "/8Gb2 /4Ab2 3/8Eb3~ /2Eb3 /4 /4Gb3 /4F3 /2Db3 /4Eb3 3/4Eb3 /2Ab2 /4Gb2
       /4Eb3 /4Gb3 /4F3 3/8Eb3 /8F3 /4Gb3 /4Eb3 /4Db3 /4Bb2 /2Ab2 /4Gb2 3/4Ab2 3/4Gb2
-      /8Gb2 /4Ab2 3/8Eb3= /2Eb3 /4 /4Gb3 /4F3 /2Db3 /4Eb3 /4Eb3 /4Gb3 /4F3 /8F3 /8Bb2=
+      /8Gb2 /4Ab2 3/8Eb3~ /2Eb3 /4 /4Gb3 /4F3 /2Db3 /4Eb3 /4Eb3 /4Gb3 /4F3 /8F3 /8Bb2~
       /2Bb2 /2Ab2 /4Eb2 /2Ab2 /4Gb2 3/2Eb2 /8C3 /8Bb2 /8Bb2 /8C3 /8C3 /8Eb3 /2Gb3
       /4F3 /8Eb3 /8Db3 3/4Db3 /8Db3 /8C3 /2C3 /4Bb2 /8Db3 /8C3 /8C3 /8Bb2 /8Bb2 /8C3
       /8C3 /8Eb3 /2Gb3 /2F3 /8Eb3 /8Db3 /4Db3 /2Bb2 /8Db3 /8C3 /8C3 /8Bb2 /8Bb2 /8C3
@@ -161,219 +416,81 @@ parts:
       /4Eb3 /4F3 /2Eb3 /2Ab2 1Bb2 /2G2 /4A2 /4D3 /2Eb3 /2C3 1G2 /2F2 /2Bb3 /4A2 /2G3
       /2C3 /4Bb2 3/4A2 /2F2 3/4G2 /4Bb2 1A2 /2D3 /4A2 /4Eb3 /4D3 /4C3 /2Bb2 /2A2 /4F2
       /4Bb2 1A2 3/4E2 3/4B2 3/4G2 3/4Gb2 3/4E2 3/4B2 3/4G2 3/4Gb2 3/4E2 3/4B2 3/4D3
-      3/4C3 3/4B2 3/4Gb2 /2Gb2= /8Gb2 /8Gb2 3/4B2 3 /2Eb2 /2F2 1Gb2 1Eb2 /2Eb2 /2F2
-      3/4Gb2= 3/8Gb2 3/8 3/4Ab2= 3/8Ab2 3/8 3/4Bb2= 3/8Bb2 3/8 1A2= /2A2 1A2 2Eb2
-    start_dynamic: 0.625
-    dynamic_changes: {}
-title: Trio in Ten Parts
-composer: James Tunnell
-start_tempo: 160
-tempo_changes:
-  ? !ruby/object:Rational
-    denominator: 1
-    numerator: 20
-  : end_value: 160
-    type: Immediate
-  38.25:
-    end_value: 90
-    type: Gradual
-    duration: 1
-    transition: :linear
-  ? !ruby/object:Rational
-    denominator: 1
-    numerator: 40
-  : end_value: 160
-    type: Gradual
-    duration: 1
-    transition: :linear
-  ? !ruby/object:Rational
-    denominator: 1
-    numerator: 41
-  : end_value: 225
-    type: Immediate
-  ? !ruby/object:Rational
-    denominator: 1
-    numerator: 78
-  : end_value: 90
-    type: Immediate
-  ? !ruby/object:Rational
-    denominator: 1
-    numerator: 93
-  : end_value: 120
-    type: Immediate
-  ? !ruby/object:Rational
-    denominator: 1
-    numerator: 99
-  : end_value: 80
-    type: Immediate
-  ? !ruby/object:Rational
-    denominator: 1
-    numerator: 111
-  : end_value: 105
-    type: Immediate
-  ? !ruby/object:Rational
-    denominator: 1
-    numerator: 121
-  : end_value: 90
-    type: Gradual
-    duration: 1.5
-    transition: :linear
-  ? !ruby/object:Rational
-    denominator: 1
-    numerator: 124
-  : end_value: 120
-    type: Immediate
-  ? !ruby/object:Rational
-    denominator: 1
-    numerator: 145
-  : end_value: 60
-    type: Immediate
-  ? !ruby/object:Rational
-    denominator: 1
-    numerator: 158
-  : end_value: 45
-    type: Gradual
-    duration: 1
-    transition: :linear
-  ? !ruby/object:Rational
-    denominator: 1
-    numerator: 161
-  : end_value: 95
-    type: Immediate
-start_meter: 3/4
-meter_changes:
-  ? !ruby/object:Rational
-    denominator: 1
-    numerator: 2
-  : end_value: 5/4
-    type: Immediate
-  ? !ruby/object:Rational
-    denominator: 1
-    numerator: 3
-  : end_value: 3/4
-    type: Immediate
-  ? !ruby/object:Rational
-    denominator: 1
-    numerator: 13
-  : end_value: 5/4
-    type: Immediate
-  ? !ruby/object:Rational
-    denominator: 1
-    numerator: 14
-  : end_value: 3/4
-    type: Immediate
-  ? !ruby/object:Rational
-    denominator: 1
-    numerator: 20
-  : end_value: 3/4
-    type: Immediate
-  ? !ruby/object:Rational
-    denominator: 1
-    numerator: 22
-  : end_value: 4/4
-    type: Immediate
-  ? !ruby/object:Rational
-    denominator: 1
-    numerator: 24
-  : end_value: 3/4
-    type: Immediate
-  ? !ruby/object:Rational
-    denominator: 1
-    numerator: 41
-  : end_value: 3/4
-    type: Immediate
-  ? !ruby/object:Rational
-    denominator: 1
-    numerator: 78
-  : end_value: 3/4
-    type: Immediate
-  ? !ruby/object:Rational
-    denominator: 1
-    numerator: 81
-  : end_value: 4/4
-    type: Immediate
-  ? !ruby/object:Rational
-    denominator: 1
-    numerator: 82
-  : end_value: 3/4
-    type: Immediate
-  ? !ruby/object:Rational
-    denominator: 1
-    numerator: 93
-  : end_value: 5/4
-    type: Immediate
-  ? !ruby/object:Rational
-    denominator: 1
-    numerator: 99
-  : end_value: 3/4
-    type: Immediate
-  ? !ruby/object:Rational
-    denominator: 1
-    numerator: 102
-  : end_value: 2/4
-    type: Immediate
-  ? !ruby/object:Rational
-    denominator: 1
-    numerator: 103
-  : end_value: 3/4
-    type: Immediate
-  ? !ruby/object:Rational
-    denominator: 1
-    numerator: 106
-  : end_value: 2/4
-    type: Immediate
-  ? !ruby/object:Rational
-    denominator: 1
-    numerator: 107
-  : end_value: 3/4
-    type: Immediate
-  ? !ruby/object:Rational
-    denominator: 1
-    numerator: 111
-  : end_value: 4/4
-    type: Immediate
-  ? !ruby/object:Rational
-    denominator: 1
-    numerator: 124
-  : end_value: 4/4
-    type: Immediate
-  ? !ruby/object:Rational
-    denominator: 1
-    numerator: 135
-  : end_value: 3/4
-    type: Immediate
-  ? !ruby/object:Rational
-    denominator: 1
-    numerator: 140
-  : end_value: 4/4
-    type: Immediate
-  ? !ruby/object:Rational
-    denominator: 1
-    numerator: 145
-  : end_value: 2*3/8
-    type: Immediate
-  ? !ruby/object:Rational
-    denominator: 1
-    numerator: 161
-  : end_value: 4/4
-    type: Immediate
-  ? !ruby/object:Rational
-    denominator: 1
-    numerator: 168
-  : end_value: 3/4
-    type: Immediate
-  ? !ruby/object:Rational
-    denominator: 1
-    numerator: 174
-  : end_value: 4/4
-    type: Immediate
-  ? !ruby/object:Rational
-    denominator: 1
-    numerator: 175
-  : end_value: 2/4
-    type: Immediate
-  ? !ruby/object:Rational
-    denominator: 1
-    numerator: 176
-  : end_value: 4/4
-    type: Immediate
+      3/4C3 3/4B2 3/4Gb2 /2Gb2~ /8Gb2 /8Gb2 3/4B2 3 /2Eb2 /2F2 1Gb2 1Eb2 /2Eb2 /2F2
+      3/4Gb2~ 3/8Gb2 3/8 3/4Ab2~ 3/8Ab2 3/8 3/4Bb2~ 3/8Bb2 3/8 1A2~ /2A2 1A2 2Eb2"
+    :dynamic_changes: {}
+    :settings: []
+:program:
+- 0/1...3/2
+- 3/2...11/4
+- 11/4...5/1
+- 5/1...29/4
+- 29/4...19/2
+- 19/2...41/4
+- 41/4...23/2
+- 23/2...13/1
+- 13/1...16/1
+- 16/1...35/2
+- 35/2...39/2
+- 39/2...51/2
+- 51/2...63/2
+- 63/2...129/4
+- 129/4...153/4
+- 153/4...177/4
+- 177/4...225/4
+- 225/4...60/1
+- 60/1...249/4
+- 249/4...253/4
+- 253/4...265/4
+- 265/4...271/4
+- 271/4...277/4
+- 277/4...143/2
+- 143/2...153/2
+- 153/2...79/1
+- 143/2...153/2
+- 79/1...325/4
+- 325/4...327/4
+- 327/4...84/1
+- 84/1...169/2
+- 169/2...347/4
+- 347/4...175/2
+- 175/2...177/2
+- 177/2...181/2
+- 181/2...185/2
+- 177/2...181/2
+- 185/2...195/2
+- 177/2...181/2
+- 195/2...201/2
+- 201/2...203/2
+- 203/2...215/2
+- 215/2...223/2
+- 223/2...461/4
+- 461/4...481/4
+- 481/4...493/4
+- 493/4...505/4
+- 505/4...130/1
+- 130/1...529/4
+- 529/4...557/4
+- 557/4...575/4
+- 575/4...579/4
+- 579/4...581/4
+- 581/4...593/4
+:title: Trio in Ten Parts
+:composer: James Tunnell
+:sections:
+  Part 1: 0/1...16/1
+  Part 2: 16/1...129/4
+  Part 3: 129/4...60/1
+  Part 4: 60/1...143/2
+  Part 5: 143/2...79/1
+  Part 6: 79/1...175/2
+  Part 7: 175/2...201/2
+  Part 8: 201/2...481/4
+  Part 9: 481/4...529/4
+  Part 10: 529/4...593/4
+:start_key:
+  :packed_class: Musicality::Key
+  :tonic_pc: 0
+  :triad: :major
+  :accidental_pref: :sharp
+:key_changes: {}

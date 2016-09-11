@@ -1,23 +1,71 @@
 ---
-type: Measured
-program:
-- 0/1...4/1
-- 4/1...8/1
-- 8/1...12/1
-- 12/1...16/1
-- 16/1...20/1
-- 20/1...33/1
-- 33/1...41/1
-- 41/1...49/1
-- 41/1...49/1
-- 49/1...57/1
-- 49/1...57/1
-- 33/1...41/1
-- 41/1...49/1
-- 49/1...57/1
-parts:
+:packed_class: Musicality::Score::Tempo
+:start_meter:
+  :packed_class: Musicality::Meter
+  :beats_per_measure: 2
+  :beat_duration: 3/8
+:start_tempo: 50
+:tempo_changes:
+  ? !ruby/object:Rational
+    denominator: 2
+    numerator: 9
+  : :packed_class: Musicality::Change::Gradual
+    :end_value: 40
+    :duration: 0.375
+    :transition: :linear
+    :start_value: 
+  ? !ruby/object:Rational
+    denominator: 4
+    numerator: 21
+  : :packed_class: Musicality::Change::Immediate
+    :end_value: 50
+  ? !ruby/object:Rational
+    denominator: 2
+    numerator: 15
+  : :packed_class: Musicality::Change::Gradual
+    :end_value: 40
+    :duration: 0.375
+    :transition: :linear
+    :start_value: 
+  ? !ruby/object:Rational
+    denominator: 4
+    numerator: 33
+  : :packed_class: Musicality::Change::Immediate
+    :end_value: 50
+  ? !ruby/object:Rational
+    denominator: 4
+    numerator: 45
+  : :packed_class: Musicality::Change::Gradual
+    :end_value: 30
+    :duration: 0.375
+    :transition: :linear
+    :start_value: 
+  ? !ruby/object:Rational
+    denominator: 8
+    numerator: 95
+  : :packed_class: Musicality::Change::Immediate
+    :end_value: 50
+  ? !ruby/object:Rational
+    denominator: 4
+    numerator: 93
+  : :packed_class: Musicality::Change::Gradual
+    :end_value: 30
+    :duration: !ruby/object:Rational
+      denominator: 4
+      numerator: 3
+    :transition: :linear
+    :start_value: 
+  ? !ruby/object:Rational
+    denominator: 4
+    numerator: 99
+  : :packed_class: Musicality::Change::Immediate
+    :end_value: 135
+:meter_changes: {}
+:parts:
   rhand:
-    notes: /8 /8D4,F4,A4. /4D4,F4,A4 /8D4,F4,A4. /8D4,F4,A4 /8 /4D4,F4,A4 /8 /8D4,G4,Bb4.
+    :packed_class: Musicality::Part
+    :start_dynamic: 0.18637968601574703
+    :notes: "/8 /8D4,F4,A4. /4D4,F4,A4 /8D4,F4,A4. /8D4,F4,A4 /8 /4D4,F4,A4 /8 /8D4,G4,Bb4.
       /8D4,G4,Bb4 /8 /4D4,F4,A4 /8 /4Db4,E4,A4 /8D4 /8F4 /8A4 3/8D5 /8 /8D4,F4,A4.
       /4D4,F4,A4 /8D4,F4,A4. /8D4,F4,A4 /8 /4D4,F4,A4 /8 /8D4,G4,Bb4. /8D4,G4,Bb4
       /8 /4D4,F4,A4 /8 /4Db4,E4,A4 /8D4 /8F4 /8A4 3/8D5 /8 /8D4,F4,A4. /4D4,F4,A4
@@ -32,7 +80,7 @@ parts:
       /8Db5. /16Db5. /16Db5. /8Db5. /8D5. /16D5. /16D5. /8D5. /8E5. /16E5. /16E5.
       /8E5. /8C5,F5 /8C5,D5 /8C5,F5 /8E5. /16E5. /16E5. /8E5. /8C5,F5 /8C5,D5 /8C5,F5
       /8E5. /16E5. /16E5. /8E5. /8C5,F5 /8C5,D5 /8C5,F5 3/8A4,E5,A5 3/8E4,A4,Db5 /8A5
-      /8G5 /8F5 /8G5 /8F5 /8E5 /8F5 /8E5 /8D5 3/8A4,F5( /8A4,F5 /8E5 /8D5 /8E5 /8D5
+      /8G5 /8F5 /8G5 /8F5 /8E5 /8F5 /8E5 /8D5 3/8A4,F5 /8A4,F5 /8E5 /8D5 /8E5 /8D5
       /8Db5 /8Db5,E5 /8B4,D5 /8A4,Db5 3/8E4,A4 /8Db4 /8D4 /8E4 /8E4 /8F4 /8G4 /8G4
       /8F4 /8E4 /8E4,G4 /8D4,F4 /8Db4,E4 /8D5 /8Db5 /8B4 /8F4,D5 /8Db5,E5 /8B4,D5
       3/8Db4,A4 3/8A4 /4D4,A4 /8E4,Ab4 /4F4,A4 /8E4,Ab4 /8F4 /8D4 /8C4 3/8A3 /4C4
@@ -40,15 +88,17 @@ parts:
       /4D4,F4 /8Eb4 /8A3 /8Db4 /8E4 /8A4 /8 /8A3 3/8D4. 3/8D4. /4A4,C5 /8Ab4,B4 /4A4,C5
       /8Ab4,B4 /8C5 /8A4 /8F4 3/8C4 /4Bb4,D5 /8A4,Db5 /4Bb4,D5 /8A4 /8Bb4 /8C5 /8Bb4
       /8A4 /8F4 /8C4 /4A4,C5 /8Ab4,B4 /4A4,C5 /8C4 /4Eb4,G4 /8C4 3/8D4,F4 /4G4 /16Gb4
-      /16F4 /4E4 /8G4 /8F4 /8A4 /8C5 3/8F5.
-    start_dynamic: 0.625
-    dynamic_changes: {}
+      /16F4 /4E4 /8G4 /8F4 /8A4 /8C5 3/8F5."
+    :dynamic_changes: {}
+    :settings: []
   lhand:
-    notes: 3 3/8D3 3/8A2 3/16D3 /16Db3 /8D3 /4Bb2 /8G2 /4A2. /8 /4A2. /8 /8D2 /8F2
+    :packed_class: Musicality::Part
+    :start_dynamic: 0.18637968601574703
+    :notes: 3 3/8D3 3/8A2 3/16D3 /16Db3 /8D3 /4Bb2 /8G2 /4A2. /8 /4A2. /8 /8D2 /8F2
       /8A2 3/8D2,D3 3/8D3 3/8A2 3/16D3 /16Db3 /8D3 /4Bb2 /8G2 /4A2. /8 /4A2. /8 /8D2
       /8F2 /8A2 3/8D3 /8D3 /8Bb2 /8D3 /8F3 /8E3 /8Db3 3/8D3 3/8D2 3/8A2,D3,E3 3/8Db2
       /8D2 /8F2 /8A2 /4D3 /8Db3 3/16Db3,E3 /16D3,F3 /8E3,G3 /8E3,G3 /8F3,A3 /8E3,G3
-      3/8D3,F3= /4D2,F3 /8Db3 3/16Db3,E3 /16D3,F3 /8E3,G3 /8E3,G3 /8F3,A3 /8E3,G3
+      3/8D3,F3~ /4D2,F3 /8Db3 3/16Db3,E3 /16D3,F3 /8E3,G3 /8E3,G3 /8F3,A3 /8E3,G3
       5/8D3,Gb3 /8Db3 /8Db3,E3 /8A2 /8Db3 /8C3,Eb3 /8A2 /8C3 /8Db3,E3 /8A2 /8Db3 /8C3,Eb3
       /8A2 /8C3 /8Db3,E3 /8A2 /8Db3 /8C3,Eb3 /8A2 /8C3 /8Db3,E3 /8A2 /8Db3 3/8C3,Eb3,Gb3
       /8Db3,E3 /8A2 /8Db3 /8C3,Eb3 /8A2 /8C3 /8Db3,E3 /8A2 /8Db3 /8C3,Eb3 /8A2 /8C3
@@ -60,59 +110,32 @@ parts:
       /8E3 3/8D3 3/8Bb2 3/8D3 /4Eb3 /8C3 3/8D3 3/8A2 3/8Db3,E3 3/8D3,F3 3/8D2 3/8F2
       3/8A2 3/4C3 3/8E2 3/8G2 3/4Bb2 3/8A2 3/8G2 3/8F2 /4D2 /8F2 3/8G2 3/8A2 3/8F2
       3/8F3
-    start_dynamic: 0.625
-    dynamic_changes: {}
-title: Marimbas
-composer: James Tunnell
-start_tempo: 50
-tempo_changes:
-  ? !ruby/object:Rational
-    denominator: 1
-    numerator: 6
-  : end_value: 40
-    type: Gradual
-    duration: 0.5
-    transition: :linear
-  ? !ruby/object:Rational
-    denominator: 1
-    numerator: 7
-  : end_value: 50
-    type: Immediate
-  ? !ruby/object:Rational
-    denominator: 1
-    numerator: 10
-  : end_value: 40
-    type: Gradual
-    duration: 0.5
-    transition: :linear
-  ? !ruby/object:Rational
-    denominator: 1
-    numerator: 11
-  : end_value: 50
-    type: Immediate
-  ? !ruby/object:Rational
-    denominator: 1
-    numerator: 15
-  : end_value: 30
-    type: Gradual
-    duration: 0.5
-    transition: :linear
-  ? !ruby/object:Rational
-    denominator: 8
-    numerator: 127
-  : end_value: 50
-    type: Immediate
-  ? !ruby/object:Rational
-    denominator: 1
-    numerator: 31
-  : end_value: 30
-    type: Gradual
-    duration: 1
-    transition: :linear
-  ? !ruby/object:Rational
-    denominator: 1
-    numerator: 33
-  : end_value: 135
-    type: Immediate
-start_meter: 2*3/8
-meter_changes: {}
+    :dynamic_changes: {}
+    :settings: []
+:program:
+- 0/1...3/1
+- 3/1...6/1
+- 6/1...9/1
+- 9/1...12/1
+- 12/1...15/1
+- 15/1...99/4
+- 99/4...123/4
+- 123/4...147/4
+- 123/4...147/4
+- 147/4...171/4
+- 147/4...171/4
+- 99/4...123/4
+- 123/4...147/4
+- 147/4...171/4
+:title: Marimbas
+:composer: James Tunnell
+:sections:
+  A: 0/1...15/1
+  B: 15/1...99/4
+  C: 99/4...171/4
+:start_key:
+  :packed_class: Musicality::Key
+  :tonic_pc: 0
+  :triad: :major
+  :accidental_pref: :sharp
+:key_changes: {}
