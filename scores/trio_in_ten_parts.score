@@ -1,6 +1,7 @@
 FIVE_FOUR = Meter.new(5,"1/4".to_r)
 
-tempo_score THREE_FOUR,160 do
+tempo_score 160 do
+  meter_change THREE_FOUR
   title "Trio in Ten Parts"
   composer "James Tunnell"
   

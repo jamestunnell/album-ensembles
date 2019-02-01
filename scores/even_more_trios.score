@@ -1,6 +1,6 @@
 FIVE_FOUR = Meter.new(5,"1/4".to_r)
 
-tempo_score FOUR_FOUR,90 do
+tempo_score 90 do
   title "Even More Trios"
   composer "James Tunnell"
 

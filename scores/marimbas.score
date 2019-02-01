@@ -1,4 +1,5 @@
-tempo_score SIX_EIGHT,50 do
+tempo_score 50 do
+  meter_change SIX_EIGHT
   title "Marimbas"
   composer "James Tunnell"
 
