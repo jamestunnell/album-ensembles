@@ -25,11 +25,24 @@ The song file can be processed to build a YAML file that represents a Musicality
 
     $ rake yaml
     
-## Building the MIDI
-The YAML file can be processed to build a MIDI file using the command line 
+## MIDI output
+The YAML file(s) can be processed to build a MIDI file using the command line 
 
     $ rake midi
 
 Also, a `.midify` file can be created a given song file, in order to specify command-line options for the `midify` executable that is used to process the YAML file. For example, for a song file `mysong.song`, a companion file `mysong.midify` could be created to specify the MIDI instrument patch numbers for each part in the score. See the song files See the `midify` command line usage for help with this, using
 
     $ midify --help
+
+## Audio output
+The YAML file(s) can be processed using SuperCollider to produce Audio output in WAV or FLAC format.
+
+First, make sure that SuperCollider is installed:
+
+    $ sudo apt install supercollider
+
+Then run the command to generate FLAC or WAV files.
+
+    $ rake flac
+    $ rake wav
+
